@@ -7,7 +7,7 @@ The workflow in `.github/workflows/deploy.yml` publishes the site whenever a cha
 
 Repository settings: **Settings, Pages, Source: GitHub Actions**, custom domain `penpresspublishing.com`, **Enforce HTTPS** ticked.
 
-## Lightning Scripture on the rail
+## The Four Watches (the rail)
 `assets/strikes.json` holds a 31-day cycle of four strikes a day (midnight, sunrise, noon, sunset), King James Version. The page picks the day from the Eastern date and the watch from the computed sunrise and sunset for Washington, Michigan. An entry may carry an optional `piece` (the written layer shown beneath the verse); `registers` names the register shown beside a watch when a piece is present.
 
 ## The Vanguard

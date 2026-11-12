@@ -567,9 +567,10 @@
   }
  ],
  "registers": {
-  "midnight": "Micro Lightning",
-  "sunrise": "Morning Mastery",
-  "noon": "Lightning Strike",
+  "midnight": "Lightning Scripture™",
+  "sunrise": "Morning Mastery™",
+  "noon": "Lightning Scripture™",
   "sunset": "The Inner Court"
- }
+ },
+ "name": "The Four Watches"
 }

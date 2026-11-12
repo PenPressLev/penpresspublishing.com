@@ -396,7 +396,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <div class="rail"><div class="sun" id="sunrise" data-label="Sunrise" style="left:30%"></div><div class="sun" id="sunset" data-label="Sunset" style="left:78%"></div><div class="now" id="nowDot" style="left:60%"></div></div>
         <div class="rail-ticks" aria-hidden="true"><span>Midnight</span><span>6 AM</span><span>Noon</span><span>6 PM</span><span>Midnight</span></div>
         <div class="strike" id="strike">
-          <div class="bolt">Lightning Scripture™<b id="strikeWatch">Sunrise</b></div>
+          <div class="bolt">The Four Watches<b id="strikeWatch">Sunrise</b></div>
           <blockquote id="strikeText">Hast thou commanded the morning since thy days; and caused the dayspring to know his place;<cite id="strikeRef">Job 38:12 · KJV</cite></blockquote>
           <p class="piece" id="strikePiece" hidden></p>
         </div>
@@ -412,8 +412,8 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <article class="line" data-start="0" data-end="24" data-days="0,1,2,3,4,5,6">
           <div class="when"><span>Four watches</span><i>On this site</i></div>
           <h3>Lightning Scripture<sup>™</sup></h3>
-          <p>Scripture at speed, kept on this page. A strike at midnight, sunrise, noon, and sunset, moving through the whole Bible in the King James Version.</p>
-          <div class="tier">Free · On the rail above</div>
+          <p>Scripture at speed, kept on this page in The Four Watches: a strike at midnight, sunrise, noon, and sunset, moving through the whole Bible in the King James Version.</p>
+          <div class="tier">Free · The Four Watches</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
           <div class="when"><span>Season closed</span><i>Long form</i></div>
@@ -766,7 +766,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     morning:{eyebrow:'Morning Mastery™ · Before the day begins',title:'Before the day<br>gets its <em>hands on you.</em>',lede:'It is morning in Michigan and the weekday devotional is up. One passage, one costly sentence, one prayer, written to be read before anything else gets a say.',cta:'Read This Morning’s Piece',verse:'“My voice shalt thou hear in the morning, O LORD; in the morning will I direct my prayer unto thee, and will look up.”',ref:'Psalm 5:3 · KJV'},
     day:{eyebrow:'Christian formation publishing · Est. Michigan',title:'Formation<br>over <em>information.</em>',lede:'Pen &amp; Press Publishing writes for souls being quietly formed. Weekday devotionals, Sunday-evening prayer, night liturgies, parables, short fiction, and long-form teaching, all built on the authority of Scripture and held to a standard most publishers stopped keeping.',cta:'Read the Vanguard',verse:'“My heart is inditing a good matter: I speak of the things which I have made touching the king: my tongue is the pen of a ready writer.”',ref:'Psalm 45:1 · KJV'},
     sunday:{eyebrow:'The Inner Court · Sunday evening',title:'A room<br>to <em>pray in.</em>',lede:'It is Sunday evening. The Inner Court is open: prayer formation for the end of the Lord’s Day, not tips on praying but a place to do it.',cta:'Enter the Inner Court',verse:'“Let my prayer be set forth before thee as incense; and the lifting up of my hands as the evening sacrifice.”',ref:'Psalm 141:2 · KJV'},
-    night:{eyebrow:'The Night Register · After sunset',title:'The keeper<br>of the <em>watch.</em>',lede:'The sun has set over Michigan. The house keeps the night with Scripture: a strike on the rail at sunset and again at midnight, for the reader who is still awake and would rather not be alone with it. After Hours With God™ is resting and is expected to return in 2027.',cta:'Read the Vanguard',verse:'“He will not suffer thy foot to be moved: he that keepeth thee will not slumber. Behold, he that keepeth Israel shall neither slumber nor sleep.”',ref:'Psalm 121:3–4 · KJV'}
+    night:{eyebrow:'The Night Register · After sunset',title:'The keeper<br>of the <em>watch.</em>',lede:'The sun has set over Michigan. The house keeps the night with Scripture: The Four Watches strike at sunset and again at midnight, for the reader who is still awake and would rather not be alone with it. After Hours With God™ is resting and is expected to return in 2027.',cta:'Read the Vanguard',verse:'“He will not suffer thy foot to be moved: he that keepeth thee will not slumber. Behold, he that keepeth Israel shall neither slumber nor sleep.”',ref:'Psalm 121:3–4 · KJV'}
   };
   var hero=document.querySelector('.hero'),currentReg='day';
   function setRegister(name){
@@ -780,7 +780,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     hero.className='hero '+name;
   }
 
-  // Lightning on the Rail: one strike per watch (midnight, sunrise, noon, sunset), Eastern time; a 31-day cycle through the whole Bible, KJV
+  // The Four Watches: one strike per watch (midnight, sunrise, noon, sunset), Eastern time; a 31-day cycle through the whole Bible, KJV
   var strikes=null,lastStrike='';
   fetch('assets/strikes.json').then(function(r){return r.json()}).then(function(j){strikes=j;tick()}).catch(function(){});
   function setStrike(h,dayNum,sun){
@@ -793,7 +793,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     document.getElementById('strikeWatch').textContent=strikes.watches[idx];
     q.textContent=st.text; var c=document.createElement('cite'); c.id='strikeRef'; c.textContent=st.ref+' · KJV'; q.appendChild(c);
     var pc=document.getElementById('strikePiece'); pc.textContent=st.piece||''; pc.hidden=!st.piece;
-    if(st.piece&&strikes.registers&&strikes.registers[key]){document.getElementById('strikeWatch').textContent=strikes.watches[idx]+' · '+strikes.registers[key]}
+    if((st.piece||key==='midnight'||key==='noon')&&strikes.registers&&strikes.registers[key]){document.getElementById('strikeWatch').textContent=strikes.watches[idx]+' · '+strikes.registers[key]}
     q.classList.remove('turn'); void q.offsetWidth; q.classList.add('turn');
   }
 
@@ -821,7 +821,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
       l.classList.toggle('live',on);
       if(on&&!live)live=l.querySelector('h3').textContent.replace('™','').trim();
     });
-    document.getElementById('nowLine').textContent=live?live+' is live':'Lightning Scripture is always open';
+    document.getElementById('nowLine').textContent=live?live+' is live':'The Four Watches are open';
   }
   tick();setInterval(tick,30000);
 })();
