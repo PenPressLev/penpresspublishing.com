@@ -533,7 +533,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
      "name": "What are The Four Watches?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The Four Watches is the Scripture rail on this site. It shows a verse from the King James Version at midnight, sunrise, noon, and sunset, Eastern time, and moves through the whole Bible over thirty-one days."
+      "text": "The Four Watches is the Scripture rail on this site. It shows a verse from the King James Version at midnight, sunrise, noon, and sunset, Eastern time, and runs from Genesis to Revelation over thirty-one days."
      }
     },
     {
@@ -675,7 +675,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <article class="line" data-start="0" data-end="24" data-days="0,1,2,3,4,5,6">
           <div class="when"><span>Every day</span><i>On this site</i></div>
           <h3>Lightning Scripture<sup>™</sup></h3>
-          <p>Scripture at the speed of a glance. A single verse meets you at midnight, sunrise, noon, and sunset in The Four Watches on this page, moving through the whole Bible month by month.</p>
+          <p>Scripture at the speed of a glance. A single verse meets you at midnight, sunrise, noon, and sunset in The Four Watches on this page, running from Genesis to Revelation month by month.</p>
           <div class="tier">Scripture · The Four Watches</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
@@ -989,7 +989,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         </div>
         <div>
           <h3>What are The Four Watches?</h3>
-          <p>The Four Watches is the Scripture rail on this site. It shows a verse from the King James Version at midnight, sunrise, noon, and sunset, Eastern time, and moves through the whole Bible over thirty-one days.</p>
+          <p>The Four Watches is the Scripture rail on this site. It shows a verse from the King James Version at midnight, sunrise, noon, and sunset, Eastern time, and runs from Genesis to Revelation over thirty-one days.</p>
         </div>
         <div>
           <h3>Where can I buy the books?</h3>
@@ -1164,7 +1164,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     document.getElementById('heroRef').textContent=st.ref+' \u00b7 KJV';
   }
 
-  // The Four Watches: one strike per watch (midnight, sunrise, noon, sunset), Eastern time; a 31-day cycle through the whole Bible, KJV
+  // The Four Watches: one strike per watch (midnight, sunrise, noon, sunset), Eastern time; a 31-day cycle from Genesis to Revelation, KJV
   var strikes=null,lastStrike='';
   fetch('assets/strikes.json').then(function(r){return r.json()}).then(function(j){strikes=j;tick()}).catch(function(){});
   function setStrike(h,dayNum,sun){
@@ -1177,7 +1177,6 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     document.getElementById('strikeWatch').textContent=strikes.watches[idx];
     q.textContent=st.text; var c=document.createElement('cite'); c.id='strikeRef'; c.textContent=st.ref+' · KJV'; q.appendChild(c);
     var pc=document.getElementById('strikePiece'); pc.textContent=st.piece||''; pc.hidden=!st.piece;
-    if((st.piece||key==='midnight'||key==='noon')&&strikes.registers&&strikes.registers[key]){document.getElementById('strikeWatch').textContent=strikes.watches[idx]+' · '+strikes.registers[key]}
     q.classList.remove('turn'); void q.offsetWidth; q.classList.add('turn');
   }
 
