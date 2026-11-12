@@ -79,9 +79,10 @@ p{margin:0}
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav > .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
-.brand img{width:26px;height:auto}
+.brand img{height:44px;width:auto}
+.brand span{display:flex;flex-direction:column;align-items:center}
 .brand b{font-family:var(--font-display);font-weight:500;font-size:22px;letter-spacing:.01em}
-.brand small{font-family:var(--font-ui);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fg-3);display:block;margin-top:-2px}
+.brand small{font-family:var(--font-ui);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fg-3);display:block;margin-top:-2px;padding-left:.3em}
 .nav-links{flex:none;white-space:nowrap;display:flex;gap:22px;font-family:var(--font-ui);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
 .nav-links a{text-decoration:none;color:var(--fg-2)}
 .nav-links a:hover{color:var(--fg)}
@@ -106,7 +107,8 @@ p{margin:0}
 @media (max-width:1239px){.menu-btn{display:inline-flex}}
 @media (min-width:1240px){.menu-panel{display:none}}
 .brand b{white-space:nowrap}
-@media (max-width:480px){.brand{gap:8px}.brand b{font-size:19px}.brand small{display:none}.nav-right{gap:8px}.theme button{padding:9px 8px}.menu-btn{padding:9px 10px}}
+@media (max-width:480px){.brand{gap:8px}.brand img{height:34px}.brand b{font-size:19px}.brand small{display:none}.nav-right{gap:8px}.theme button{padding:9px 8px}.menu-btn{padding:9px 10px}}
+@media (max-width:380px){.brand img{height:28px}}
 @media (max-width:350px){.brand img{display:none}.theme button{padding:9px 6px}.menu-btn{padding:9px 8px}}
 section[id],div[id="group"],div[id="quote"]{scroll-margin-top:64px}
 
@@ -549,7 +551,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Pen & Press Publishing, home">
-      <img width="592" height="600" src="assets/mark.png" alt="">
+      <img width="227" height="390" src="assets/mark.png" alt="">
       <span><b>Pen &amp; Press</b><small>Publishing</small></span>
     </a>
     <nav class="nav-links" aria-label="Site">
