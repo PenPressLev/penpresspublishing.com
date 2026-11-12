@@ -191,15 +191,18 @@ section{padding-block:clamp(72px,9vw,128px)}
 .now-label b{color:var(--fg);font-weight:500}
 .lines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}
 .line{background:var(--bg);padding:30px 28px 32px;min-width:0;display:flex;flex-direction:column;gap:14px;transition:background .25s}
-.line:hover{background:var(--bg-2)}
+.line:hover{background:color-mix(in srgb,var(--bg-2) 45%,var(--bg))}
 .line .when{font-family:var(--font-ui);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-3);display:flex;justify-content:space-between;gap:10px}
 .line .when i{font-style:normal;color:var(--fg-2)}
 .line h3{font-size:30px;font-weight:500}
 .line h3 sup{font-family:var(--font-ui);font-size:11px;vertical-align:top;margin-left:2px;color:var(--fg-3)}
 .line p{color:var(--fg-2);font-size:17px;font-weight:300;flex:1}
 .line .tier{font-family:var(--font-ui);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-3);border-top:1px solid var(--line);padding-top:12px}
-.line.live{background:var(--bg-3)}
+.line.live,.line.live:hover{background:var(--bg-2);box-shadow:inset 0 4px 0 var(--fg)}
+.line.live .when span::after{content:" · Live now";color:var(--fg);font-weight:600}
+.line.live h3{color:var(--fg)}
 .line.live .when i::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--fg);margin-right:8px;vertical-align:1px}
+@media (min-width:981px){.lines .line:last-child{grid-column:1/-1}}
 @media (max-width:980px){.lines{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.lines{grid-template-columns:1fr}}
 
@@ -522,7 +525,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
      "name": "What is Morning Mastery?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Morning Mastery is the weekday devotional of Pen & Press Publishing, published on The Pen & Press Vanguard on Substack: one passage, one costly sentence, one prayer, written to be read before the day begins."
+      "text": "Morning Mastery is the weekday devotional of Pen & Press Publishing, published on The Pen & Press Vanguard on Substack: one passage, one truth to carry, one prayer, written to be read before the day begins."
      }
     },
     {
@@ -613,7 +616,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
       <div class="fact"><b>50</b><span>States reached by Pen &amp; Press books</span></div>
       <div class="fact"><b>4</b><span>Watches of Scripture on this page each day</span></div>
       <div class="fact"><b>10</b><span>Publication lines, each with its own hour</span></div>
-      <div class="fact"><b>2</b><span>Gates every piece passes before you read it</span></div>
+      <div class="fact"><b>2</b><span>Rounds of review before any piece reaches you</span></div>
     </div>
   </div>
 
@@ -629,7 +632,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
           <p class="eyebrow">The Lines</p>
           <h2>The house keeps hours.</h2>
         </div>
-        <p>Every Pen &amp; Press line is written for a particular time of day, because formation is not a feed. Morning has its register and midnight has another. The rail below runs on Eastern time; the line that is live right now is lit. Some lines keep seasons, and each card says where its season stands.</p>
+        <p>Every Pen &amp; Press line is written for a particular time of day, because formation is not a feed. Morning has its register and midnight has another. The rail below runs on Eastern time; the line that is live right now is marked “Live now.” Some lines keep seasons, and each card says where its season stands.</p>
       </div>
 
       <div class="clock">
@@ -648,7 +651,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <article class="line" data-start="5" data-end="9" data-days="1,2,3,4,5">
           <div class="when"><span>Weekdays · Morning</span><i>5–9 AM</i></div>
           <h3>Morning Mastery<sup>™</sup></h3>
-          <p>The flagship weekday devotional. One passage, one costly sentence, one prayer. Built to be read before the day gets its hands on you.</p>
+          <p>The flagship weekday devotional. One passage of Scripture, one truth to carry, one prayer. Built to be read before the day gets its hands on you.</p>
           <div class="tier">Paid · Substack &amp; Facebook</div>
         </article>
         <article class="line" data-start="0" data-end="24" data-days="0,1,2,3,4,5,6">
@@ -666,13 +669,13 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
           <div class="when"><span>Coming 2027</span><i>Parables</i></div>
           <h3>Pen &amp; Press Parables</h3>
-          <p>Original parables in four movements, 150 to 275 words each, with the biblical inversion submerged where it belongs. A section of its own in 2027.</p>
+          <p>Short original parables: everyday scenes that open onto something larger. Read in a few minutes, remembered for days. A section of its own in 2027.</p>
           <div class="tier">Substack · 2027</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="6">
           <div class="when"><span>Season closed</span><i>Family</i></div>
           <h3>The Hearth</h3>
-          <p>Christian family formation for the household that intends to stay one. Written by the WARMTH method for the table, not the timeline. The season closed October 15, 2026.</p>
+          <p>Christian family formation for the household that intends to stay one. Written for the table, not the timeline. The season closed October 15, 2026.</p>
           <div class="tier">Paid archive · Substack</div>
         </article>
         <article class="line" data-start="17" data-end="21" data-days="0">
@@ -682,21 +685,21 @@ footer .links a{color:var(--fg-2);text-decoration:none}
           <div class="tier">Hybrid · Substack</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="0,1,2,3,4,5,6">
-          <div class="when"><span>Resting</span><i>Night Register</i></div>
+          <div class="when"><span>Resting</span><i>Evening</i></div>
           <h3>After Hours With God<sup>™</sup></h3>
-          <p>A six-part evening micro-liturgy in the Night Register. Dry audio, no music beds, the keeper of the watch who neither slumbers nor sleeps. Resting for now; expected to return in 2027.</p>
+          <p>A short evening liturgy for the last hour of the day, read and heard under the care of the One who neither slumbers nor sleeps. Resting for now; expected to return in 2027.</p>
           <div class="tier">Paid archive · Substack</div>
         </article>
         <article class="line" data-start="9" data-end="21" data-days="1,2,3,4,5">
           <div class="when"><span>Weekdays</span><i>Civic</i></div>
           <h3>The Plumb Line</h3>
-          <p>Civic discipleship held to ten guardrails so it stays formational and never partisan. Source-verified before it is published. This season runs through the third week of December and resumes in January 2027.</p>
+          <p>Civic discipleship for Christians who want to think clearly about public life. Formational, never partisan, and checked against its sources before it is published. This season runs through the third week of December and resumes in January 2027.</p>
           <div class="tier">Hybrid · Substack</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
           <div class="when"><span>Coming 2027</span><i>Fiction</i></div>
           <h3>Vanguard Flash</h3>
-          <p>Short fiction under the Vanguard Narrative Framework. Stories that carry weight in a few hundred words. A new section in 2027.</p>
+          <p>Short fiction: stories that carry weight in a few hundred words. A new section in 2027.</p>
           <div class="tier">Substack · 2027</div>
         </article>
         <article class="line" data-start="9" data-end="21" data-days="1,2,3,4,5">
@@ -905,7 +908,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <div class="entity">
           <img width="1600" height="589" loading="lazy" decoding="async" src="assets/holdings-lockup.jpg" alt="Pen & Press Holdings LLC">
           <p class="eyebrow">Pen &amp; Press Holdings LLC</p>
-          <p style="margin-top:10px">The parent company. Holds and stewards the frameworks, trademarks, and intellectual property that the publishing work is built on.</p>
+          <p style="margin-top:10px">The parent company. Holds and stewards the trademarks and intellectual property that the publishing work is built on.</p>
         </div>
         <div class="entity">
           <img width="1080" height="947" loading="lazy" decoding="async" src="assets/publishing-lockup.png" alt="Pen & Press Publishing" style="background:#000">
@@ -982,7 +985,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         </div>
         <div>
           <h3>What is Morning Mastery?</h3>
-          <p>Morning Mastery is the weekday devotional of Pen &amp; Press Publishing, published on The Pen &amp; Press Vanguard on Substack: one passage, one costly sentence, one prayer, written to be read before the day begins.</p>
+          <p>Morning Mastery is the weekday devotional of Pen &amp; Press Publishing, published on The Pen &amp; Press Vanguard on Substack: one passage, one truth to carry, one prayer, written to be read before the day begins.</p>
         </div>
         <div>
           <h3>What are The Four Watches?</h3>
@@ -1131,10 +1134,10 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     return {rise:calc(true),set:calc(false)};
   }
   var registers={
-    morning:{eyebrow:'Morning Mastery™ · Before the day begins',title:'Before the day<br>gets its <em>hands on you.</em>',lede:'It is morning in Michigan and the weekday devotional is up. One passage, one costly sentence, one prayer, written to be read before anything else gets a say.',cta:'Read This Morning’s Piece',verse:'“My voice shalt thou hear in the morning, O LORD; in the morning will I direct my prayer unto thee, and will look up.”',ref:'Psalm 5:3 · KJV'},
+    morning:{eyebrow:'Morning Mastery™ · Before the day begins',title:'Before the day<br>gets its <em>hands on you.</em>',lede:'It is morning in Michigan and the weekday devotional is up. One passage, one truth to carry, one prayer, written to be read before anything else gets a say.',cta:'Read This Morning’s Piece',verse:'“My voice shalt thou hear in the morning, O LORD; in the morning will I direct my prayer unto thee, and will look up.”',ref:'Psalm 5:3 · KJV'},
     day:{eyebrow:'Christian formation publishing · Est. Michigan',title:'Formation<br>over <em>information.</em>',lede:'Pen &amp; Press Publishing writes for souls being quietly formed. Weekday devotionals, Sunday-evening prayer, night liturgies, parables, short fiction, and long-form teaching, all built on the authority of Scripture and held to a standard most publishers stopped keeping.',cta:'Read the Vanguard',verse:'“My heart is inditing a good matter: I speak of the things which I have made touching the king: my tongue is the pen of a ready writer.”',ref:'Psalm 45:1 · KJV'},
     sunday:{eyebrow:'The Inner Court · Sunday evening',title:'A room<br>to <em>pray in.</em>',lede:'It is Sunday evening. The Inner Court is open: prayer formation for the end of the Lord’s Day, not tips on praying but a place to do it.',cta:'Enter the Inner Court',verse:'“Let my prayer be set forth before thee as incense; and the lifting up of my hands as the evening sacrifice.”',ref:'Psalm 141:2 · KJV'},
-    night:{eyebrow:'The Night Register · After sunset',title:'The keeper<br>of the <em>watch.</em>',lede:'The sun has set over Michigan. The house keeps the night with Scripture: The Four Watches strike at sunset and again at midnight, for the reader who is still awake and would rather not be alone with it. After Hours With God™ is resting and is expected to return in 2027.',cta:'Read the Vanguard',verse:'“He will not suffer thy foot to be moved: he that keepeth thee will not slumber. Behold, he that keepeth Israel shall neither slumber nor sleep.”',ref:'Psalm 121:3–4 · KJV'}
+    night:{eyebrow:'After sunset · The night hours',title:'The keeper<br>of the <em>watch.</em>',lede:'The sun has set over Michigan. The house keeps the night with Scripture: The Four Watches strike at sunset and again at midnight, for the reader who is still awake and would rather not be alone with it. After Hours With God™ is resting and is expected to return in 2027.',cta:'Read the Vanguard',verse:'“He will not suffer thy foot to be moved: he that keepeth thee will not slumber. Behold, he that keepeth Israel shall neither slumber nor sleep.”',ref:'Psalm 121:3–4 · KJV'}
   };
   var hero=document.querySelector('.hero'),currentReg='day';
   function setRegister(name){
