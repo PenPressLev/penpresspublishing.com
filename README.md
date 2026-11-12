@@ -17,7 +17,7 @@ The page points to the Substack and does not list post titles: Substack refuses 
 In `index.html`, set `LETTERS_ENDPOINT` to the list provider's subscribe address. Until it is set, the form points readers to the house email.
 
 ## Order buttons
-"Order Direct" links to the Contact section until the store address is supplied. "On Amazon" opens an Amazon search for the title until the product links are supplied.
+"Order Direct" links to the Contact section until the store address is supplied. "On Amazon" buttons carry the product links supplied by the Founder; *A Light Has Come* opens an Amazon search for the title until its product link is supplied.
 
 ## Maintenance law
 Every change to the site ships through this repository.
