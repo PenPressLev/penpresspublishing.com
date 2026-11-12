@@ -121,7 +121,7 @@ p{margin:0}
 .hero.night .lede,.hero.night .verse span{color:var(--fg-2)}
 .hero.morning .hero-mark::before{background:radial-gradient(closest-side,color-mix(in srgb,var(--fg) 16%,transparent),transparent 70%)}
 .rail .sun{position:absolute;top:-5px;width:1px;height:12px;background:var(--fg-3)}
-.rail .sun::after{content:attr(data-label);position:absolute;top:14px;left:50%;transform:translateX(-50%);font-family:var(--font-ui);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-3);white-space:nowrap}
+.rail .sun::after{content:attr(data-label);position:absolute;top:-17px;left:50%;transform:translateX(-50%);font-family:var(--font-ui);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-3);white-space:nowrap}
 @media (max-width:600px){.rail .sun::after{display:none}}
 
 /* ---- ticker / house facts ---- */
@@ -180,6 +180,8 @@ section{padding-block:clamp(72px,9vw,128px)}
 .strike .bolt b{display:block;color:var(--fg);font-weight:500;margin-top:2px}
 .strike blockquote{margin:0;min-width:0;font-family:var(--font-display);font-size:clamp(20px,2.2vw,28px);font-style:italic;font-weight:400;line-height:1.3;text-wrap:balance}
 .strike cite{display:block;font-style:normal;font-family:var(--font-ui);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-3);margin-top:10px}
+.strike .piece{grid-column:2;margin:0;max-width:38em;color:var(--fg-2);font-weight:300;font-size:18px;white-space:pre-line}
+@media (max-width:720px){.strike .piece{grid-column:1}}
 .strike .read{font-family:var(--font-ui);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-2);text-decoration:none;padding-top:8px;white-space:nowrap}
 .strike .read:hover{color:var(--fg)}
 @media (max-width:720px){.strike{grid-template-columns:1fr}.strike .read{padding-top:0}}
@@ -386,7 +388,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
           <p class="eyebrow">The Lines</p>
           <h2>The house keeps hours.</h2>
         </div>
-        <p>Every Pen &amp; Press line is written for a particular time of day, because formation is not a feed. Morning has its register and midnight has another. The rail below runs on Eastern time; the line that is live right now is lit.</p>
+        <p>Every Pen &amp; Press line is written for a particular time of day, because formation is not a feed. Morning has its register and midnight has another. The rail below runs on Eastern time; the line that is live right now is lit. Some lines keep seasons, and each card says where its season stands.</p>
       </div>
 
       <div class="clock">
@@ -394,9 +396,9 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <div class="rail"><div class="sun" id="sunrise" data-label="Sunrise" style="left:30%"></div><div class="sun" id="sunset" data-label="Sunset" style="left:78%"></div><div class="now" id="nowDot" style="left:60%"></div></div>
         <div class="rail-ticks" aria-hidden="true"><span>Midnight</span><span>6 AM</span><span>Noon</span><span>6 PM</span><span>Midnight</span></div>
         <div class="strike" id="strike">
-          <div class="bolt">Lightning Scripture™<b id="strikeWatch">Dawn</b></div>
-          <blockquote id="strikeText">Hast thou commanded the morning since thy days; and caused the dayspring to know his place?<cite id="strikeRef">Job 38:12 · KJV</cite></blockquote>
-          <a class="read" href="https://levmontgomery.substack.com/" target="_blank" rel="noopener">Read the Lightning →</a>
+          <div class="bolt">Lightning Scripture™<b id="strikeWatch">Sunrise</b></div>
+          <blockquote id="strikeText">Hast thou commanded the morning since thy days; and caused the dayspring to know his place;<cite id="strikeRef">Job 38:12 · KJV</cite></blockquote>
+          <p class="piece" id="strikePiece" hidden></p>
         </div>
       </div>
 
@@ -408,28 +410,28 @@ footer .links a{color:var(--fg-2);text-decoration:none}
           <div class="tier">Paid · Substack &amp; Facebook</div>
         </article>
         <article class="line" data-start="0" data-end="24" data-days="0,1,2,3,4,5,6">
-          <div class="when"><span>Any hour</span><i>Short form</i></div>
+          <div class="when"><span>Four watches</span><i>On this site</i></div>
           <h3>Lightning Scripture<sup>™</sup></h3>
-          <p>Scripture at speed. Micro, Servant’s, and Psalm Lightning strike in under a minute and stay with you all afternoon.</p>
-          <div class="tier">Free · Substack &amp; social</div>
+          <p>Scripture at speed, kept on this page. A strike at midnight, sunrise, noon, and sunset, moving through the whole Bible in the King James Version.</p>
+          <div class="tier">Free · On the rail above</div>
         </article>
-        <article class="line" data-start="9" data-end="17" data-days="1,2,3,4,5">
-          <div class="when"><span>Weekdays · Midday</span><i>Long form</i></div>
+        <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
+          <div class="when"><span>Season closed</span><i>Long form</i></div>
           <h3>The King’s Hour</h3>
           <p>A teaching series through Ecclesiastes, read slowly and argued carefully. The series closed in October 2026; the manuscript follows.</p>
-          <div class="tier">Substack · Monthly</div>
+          <div class="tier">Paid archive · Substack</div>
         </article>
-        <article class="line" data-start="9" data-end="17" data-days="1,2,3,4,5">
-          <div class="when"><span>Weekdays · Afternoon</span><i>Parables</i></div>
+        <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
+          <div class="when"><span>Coming 2027</span><i>Parables</i></div>
           <h3>Pen &amp; Press Parables</h3>
-          <p>Original parables in four movements, 150 to 275 words each, with the biblical inversion submerged where it belongs.</p>
-          <div class="tier">Substack</div>
+          <p>Original parables in four movements, 150 to 275 words each, with the biblical inversion submerged where it belongs. A section of its own in 2027.</p>
+          <div class="tier">Substack · 2027</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="6">
           <div class="when"><span>Season closed</span><i>Family</i></div>
           <h3>The Hearth</h3>
-          <p>Christian family formation for the household that intends to stay one. Written by the WARMTH method for the table, not the timeline. The season closed October 15, 2026; the archive stays open on the Vanguard.</p>
-          <div class="tier">Archive · Substack</div>
+          <p>Christian family formation for the household that intends to stay one. Written by the WARMTH method for the table, not the timeline. The season closed October 15, 2026.</p>
+          <div class="tier">Paid archive · Substack</div>
         </article>
         <article class="line" data-start="17" data-end="21" data-days="0">
           <div class="when"><span>Sunday · Evening</span><i>5–9 PM</i></div>
@@ -437,23 +439,23 @@ footer .links a{color:var(--fg-2);text-decoration:none}
           <p>Sunday-evening prayer formation. Not tips on praying; a room to pray in.</p>
           <div class="tier">Hybrid · Substack</div>
         </article>
-        <article class="line" data-start="22" data-end="23.5" data-days="0,1,2,3,4,5,6">
-          <div class="when"><span>Nightly</span><i>10–11:30 PM</i></div>
+        <article class="line" data-start="0" data-end="0" data-days="0,1,2,3,4,5,6">
+          <div class="when"><span>Resting</span><i>Night Register</i></div>
           <h3>After Hours With God<sup>™</sup></h3>
-          <p>A six-part evening micro-liturgy in the Night Register. Dry audio, no music beds, the keeper of the watch who neither slumbers nor sleeps.</p>
-          <div class="tier">Paid · Audio &amp; text</div>
+          <p>A six-part evening micro-liturgy in the Night Register. Dry audio, no music beds, the keeper of the watch who neither slumbers nor sleeps. Resting for now; expected to return in 2027.</p>
+          <div class="tier">Paid archive · Substack</div>
         </article>
         <article class="line" data-start="9" data-end="21" data-days="1,2,3,4,5">
           <div class="when"><span>Weekdays</span><i>Civic</i></div>
           <h3>The Plumb Line</h3>
-          <p>Civic discipleship held to ten guardrails so it stays formational and never partisan. Source-verified before it is published.</p>
+          <p>Civic discipleship held to ten guardrails so it stays formational and never partisan. Source-verified before it is published. This season runs through the third week of December and resumes in January 2027.</p>
           <div class="tier">Hybrid · Substack</div>
         </article>
-        <article class="line" data-start="9" data-end="21" data-days="1,2,3,4,5">
-          <div class="when"><span>Weekdays</span><i>Fiction</i></div>
+        <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
+          <div class="when"><span>Coming 2027</span><i>Fiction</i></div>
           <h3>Vanguard Flash</h3>
-          <p>Short fiction under the Vanguard Narrative Framework. Stories that carry weight in a few hundred words.</p>
-          <div class="tier">Substack</div>
+          <p>Short fiction under the Vanguard Narrative Framework. Stories that carry weight in a few hundred words. A new section in 2027.</p>
+          <div class="tier">Substack · 2027</div>
         </article>
         <article class="line" data-start="9" data-end="21" data-days="1,2,3,4,5">
           <div class="when"><span>Weekdays</span><i>Essay</i></div>
@@ -470,20 +472,14 @@ footer .links a{color:var(--fg-2);text-decoration:none}
       <div class="sec-head">
         <div>
           <p class="eyebrow">Latest from the Vanguard</p>
-          <h2>What the house published this week.</h2>
+          <h2>This week, on the Vanguard.</h2>
         </div>
-        <p>Pulled from The Pen &amp; Press Vanguard. Each opens on Substack, where the archive lives.</p>
+        <p>The newest pieces from the lines in season are published on Substack. Free pieces stay open for two weeks, then join the paid archive.</p>
       </div>
-      <!-- LATEST:BEGIN regenerated from the Substack RSS by scripts/fetch-latest.mjs at deploy time -->
-      <div class="latest" id="latestPosts">
-        <a class="post" href="https://levmontgomery.substack.com/p/morning-mastery-in-the-presence-of" target="_blank" rel="noopener"><span class="ln">Morning Mastery™</span><h3>In the Presence of My Enemies</h3><span class="arrow">Read →</span></a>
-        <a class="post" href="https://levmontgomery.substack.com/p/morning-mastery-the-answer-was-no" target="_blank" rel="noopener"><span class="ln">Morning Mastery™</span><h3>The Answer Was No</h3><span class="arrow">Read →</span></a>
-        <a class="post" href="https://levmontgomery.substack.com/p/the-hearth-call-me-mara" target="_blank" rel="noopener"><span class="ln">The Hearth</span><h3>Call Me Mara</h3><span class="arrow">Read →</span></a>
-        <a class="post" href="https://levmontgomery.substack.com/p/morning-mastery-the-day-the-manna" target="_blank" rel="noopener"><span class="ln">Morning Mastery™</span><h3>The Day the Manna Stopped</h3><span class="arrow">Read →</span></a>
-        <a class="post" href="https://levmontgomery.substack.com/p/the-plumb-line-how-a-citizen-is-made" target="_blank" rel="noopener"><span class="ln">The Plumb Line</span><h3>How a Citizen Is Made</h3><span class="arrow">Read →</span></a>
-        <a class="post" href="https://levmontgomery.substack.com/p/the-pen-and-press-exposition-when-201" target="_blank" rel="noopener"><span class="ln">The Pen &amp; Press Exposition</span><h3>When the Brook Dries Up</h3><span class="arrow">Read →</span></a>
+      <div class="subscribe" style="margin-top:0">
+        <div style="min-width:0"><div class="t">Read what the house published this week</div><div class="url">levmontgomery.substack.com</div></div>
+        <a class="btn solid" href="https://levmontgomery.substack.com/" target="_blank" rel="noopener">Read the Latest</a>
       </div>
-      <!-- LATEST:END -->
 
       <div class="letters">
         <div>
@@ -521,7 +517,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
             <p class="sub">An Advent Vigil in the Glory of Christ Incarnate</p>
             <p>Twenty-one days of Advent, kept as a vigil. First written as the house&rsquo;s 2025 Advent series and since edited for the page. Released November 12, 2026.</p>
             <div class="meta"><span class="chip">Released Nov 2026</span><span class="chip">21 Days of Advent</span></div>
-            <div class="ctas"><a class="btn small solid" href="#contact">Order Direct</a></div>
+            <div class="ctas"><a class="btn small solid" href="#contact">Order Direct</a><a class="btn small" href="https://www.amazon.com/s?k=%22A+Light+Has+Come%22+Lev+Montgomery" target="_blank" rel="noopener">On Amazon</a></div>
           </div>
         </article>
         <article class="book">
@@ -534,7 +530,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
             <p class="sub">A 90-Day Devotional for Souls Being Quietly Formed</p>
             <p>Ninety mornings, one passage at a time, for the reader who wants to be shaped rather than entertained. Released August 21, 2026, with a Companion Study Guide built for fellowships, small groups, and the person who reads with a pen in hand.</p>
             <div class="meta"><span class="chip">Released Aug 2026</span><span class="chip">Companion Study Guide</span><span class="chip">Bundles available</span></div>
-            <div class="ctas"><a class="btn small solid" href="#contact">Order Direct</a><a class="btn small" href="#group">Group Orders</a></div>
+            <div class="ctas"><a class="btn small solid" href="#contact">Order Direct</a><a class="btn small" href="#group">Group Orders</a><a class="btn small" href="https://www.amazon.com/s?k=%22Before+the+Day%22+Lev+Montgomery" target="_blank" rel="noopener">On Amazon</a></div>
           </div>
         </article>
         <article class="book">
@@ -544,7 +540,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
             <p class="sub">66 Devotionals and Prayers Across Scripture</p>
             <p>The first Pen &amp; Press title, and the one that proved the house had readers: every state in the Union, Canada, and the United Kingdom. Where the voice was forged.</p>
             <div class="meta"><span class="chip">66 Devotionals</span><span class="chip">50 States · Canada · UK</span></div>
-            <div class="ctas"><a class="btn small solid" href="#contact">Order Direct</a></div>
+            <div class="ctas"><a class="btn small solid" href="#contact">Order Direct</a><a class="btn small" href="https://www.amazon.com/s?k=%22Flashes+of+Fire%22+Lev+Montgomery" target="_blank" rel="noopener">On Amazon</a></div>
           </div>
         </article>
       </div>
@@ -577,24 +573,24 @@ footer .links a{color:var(--fg-2);text-decoration:none}
           <p class="eyebrow">The Substack</p>
           <h2>The Pen &amp; Press Vanguard.</h2>
         </div>
-        <p>The primary written channel of the house. Every line above is published here first, in the order the day intends.</p>
+        <p>The primary written channel of the house. The lines in season are published here, in the order the day intends.</p>
       </div>
       <div class="lockup"><img src="assets/vanguard-lockup.png" alt="Pen & Press Vanguard"></div>
       <div class="van">
         <div>
           <p class="eyebrow">Free</p>
-          <h3>Lightning Scripture and the open posts</h3>
-          <p>Short-form Scripture, State of the Vanguard letters, and selected pieces from every line. Enough to know whether this house is for you.</p>
+          <h3>The open posts</h3>
+          <p>State of the Vanguard letters and selected pieces from the lines in season. Free pieces stay open for two weeks, then join the paid archive. Enough to know whether this house is for you.</p>
         </div>
         <div>
           <p class="eyebrow">Paid</p>
-          <h3>Morning Mastery and After Hours With God</h3>
-          <p>The weekday devotional in full, the night liturgies with audio, and the archive. This is the work that pays for the rest.</p>
+          <h3>Morning Mastery and the archive</h3>
+          <p>The weekday devotional in full, and the whole archive of every line once its two free weeks have passed. This is the work that pays for the rest.</p>
         </div>
         <div>
           <p class="eyebrow">Hybrid</p>
-          <h3>The Inner Court, The Hearth, The Plumb Line</h3>
-          <p>Open pieces alongside members-only depth. Sunday-evening prayer, Saturday family formation, and civic discipleship without the noise.</p>
+          <h3>The Inner Court and The Plumb Line</h3>
+          <p>Open pieces alongside members-only depth. Sunday-evening prayer, and civic discipleship without the noise.</p>
         </div>
       </div>
       <div class="subscribe">
@@ -770,7 +766,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     morning:{eyebrow:'Morning Mastery™ · Before the day begins',title:'Before the day<br>gets its <em>hands on you.</em>',lede:'It is morning in Michigan and the weekday devotional is up. One passage, one costly sentence, one prayer, written to be read before anything else gets a say.',cta:'Read This Morning’s Piece',verse:'“My voice shalt thou hear in the morning, O LORD; in the morning will I direct my prayer unto thee, and will look up.”',ref:'Psalm 5:3 · KJV'},
     day:{eyebrow:'Christian formation publishing · Est. Michigan',title:'Formation<br>over <em>information.</em>',lede:'Pen &amp; Press Publishing writes for souls being quietly formed. Weekday devotionals, Sunday-evening prayer, night liturgies, parables, short fiction, and long-form teaching, all built on the authority of Scripture and held to a standard most publishers stopped keeping.',cta:'Read the Vanguard',verse:'“My heart is inditing a good matter: I speak of the things which I have made touching the king: my tongue is the pen of a ready writer.”',ref:'Psalm 45:1 · KJV'},
     sunday:{eyebrow:'The Inner Court · Sunday evening',title:'A room<br>to <em>pray in.</em>',lede:'It is Sunday evening. The Inner Court is open: prayer formation for the end of the Lord’s Day, not tips on praying but a place to do it.',cta:'Enter the Inner Court',verse:'“Let my prayer be set forth before thee as incense; and the lifting up of my hands as the evening sacrifice.”',ref:'Psalm 141:2 · KJV'},
-    night:{eyebrow:'After Hours With God™ · The Night Register',title:'The keeper<br>of the <em>watch.</em>',lede:'The sun has set over Michigan. This is the hour the house writes in the Night Register: a six-part evening liturgy, dry audio, no music beds, for the reader who is still awake and would rather not be alone with it.',cta:'Enter After Hours',verse:'“He will not suffer thy foot to be moved: he that keepeth thee will not slumber. Behold, he that keepeth Israel shall neither slumber nor sleep.”',ref:'Psalm 121:3–4 · KJV'}
+    night:{eyebrow:'The Night Register · After sunset',title:'The keeper<br>of the <em>watch.</em>',lede:'The sun has set over Michigan. The house keeps the night with Scripture: a strike on the rail at sunset and again at midnight, for the reader who is still awake and would rather not be alone with it. After Hours With God™ is resting and is expected to return in 2027.',cta:'Read the Vanguard',verse:'“He will not suffer thy foot to be moved: he that keepeth thee will not slumber. Behold, he that keepeth Israel shall neither slumber nor sleep.”',ref:'Psalm 121:3–4 · KJV'}
   };
   var hero=document.querySelector('.hero'),currentReg='day';
   function setRegister(name){
@@ -784,33 +780,36 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     hero.className='hero '+name;
   }
 
-  // Lightning on the Rail: one strike per watch (Midnight / Dawn 6 AM / Noon / Evening 6 PM), Eastern time
+  // Lightning on the Rail: one strike per watch (midnight, sunrise, noon, sunset), Eastern time; a 31-day cycle through the whole Bible, KJV
   var strikes=null,lastStrike='';
   fetch('assets/strikes.json').then(function(r){return r.json()}).then(function(j){strikes=j;tick()}).catch(function(){});
-  function setStrike(h,dayOfMonth){
+  function setStrike(h,dayNum,sun){
     if(!strikes)return;
-    var idx=h<6?0:h<12?1:h<18?2:3, key=['midnight','dawn','noon','evening'][idx];
-    var day=strikes.days[(dayOfMonth-1)%strikes.days.length], st=day[key], id=key+dayOfMonth;
+    var rise=sun&&sun.rise!=null?sun.rise:6, set=sun&&sun.set!=null?sun.set:18;
+    var idx=h<rise?0:h<12?1:h<set?2:3, key=['midnight','sunrise','noon','sunset'][idx];
+    var day=strikes.days[dayNum%strikes.days.length], st=day[key], id=key+dayNum;
     if(id===lastStrike)return; lastStrike=id;
     var q=document.getElementById('strikeText');
     document.getElementById('strikeWatch').textContent=strikes.watches[idx];
     q.textContent=st.text; var c=document.createElement('cite'); c.id='strikeRef'; c.textContent=st.ref+' · KJV'; q.appendChild(c);
+    var pc=document.getElementById('strikePiece'); pc.textContent=st.piece||''; pc.hidden=!st.piece;
+    if(st.piece&&strikes.registers&&strikes.registers[key]){document.getElementById('strikeWatch').textContent=strikes.watches[idx]+' · '+strikes.registers[key]}
     q.classList.remove('turn'); void q.offsetWidth; q.classList.add('turn');
   }
 
   // Clock rail: Eastern time, live line lit
   var lines=[].slice.call(document.querySelectorAll('.line'));
   var fmt=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit',weekday:'short',hour12:true});
-  var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'numeric',weekday:'short',day:'numeric',hour12:false});
+  var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'numeric',weekday:'short',day:'numeric',month:'numeric',year:'numeric',hour12:false});
   var dayIdx={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
   function tick(){
     var now=new Date(),p={};
     parts.formatToParts(now).forEach(function(x){p[x.type]=x.value});
     var h=(parseInt(p.hour,10)%24)+parseInt(p.minute,10)/60, d=dayIdx[p.weekday];
-    setStrike(h,parseInt(p.day,10));
     document.getElementById('nowTime').textContent=fmt.format(now);
     document.getElementById('nowDot').style.left=(h/24*100)+'%';
     var sun=sunTimes(now);
+    setStrike(h,Math.round(Date.UTC(parseInt(p.year,10),parseInt(p.month,10)-1,parseInt(p.day,10))/864e5),sun);
     if(sun.rise!=null){document.getElementById('sunrise').style.left=(sun.rise/24*100)+'%'}
     if(sun.set!=null){document.getElementById('sunset').style.left=(sun.set/24*100)+'%'}
     var dusk=sun.set!=null?sun.set+0.5:19.5;
