@@ -1,0 +1,136 @@
+{
+ "watches": [
+  "Midnight",
+  "Dawn",
+  "Noon",
+  "Evening"
+ ],
+ "days": [
+  {
+   "midnight": {
+    "ref": "Psalm 77:6",
+    "text": "I call to remembrance my song in the night: I commune with mine own heart: and my spirit made diligent search."
+   },
+   "dawn": {
+    "ref": "Job 38:12",
+    "text": "Hast thou commanded the morning since thy days; and caused the dayspring to know his place?"
+   },
+   "noon": {
+    "ref": "Ecclesiastes 9:10",
+    "text": "Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest."
+   },
+   "evening": {
+    "ref": "Genesis 24:63",
+    "text": "And Isaac went out to meditate in the field at the eventide."
+   }
+  },
+  {
+   "midnight": {
+    "ref": "Job 35:10",
+    "text": "But none saith, Where is God my maker, who giveth songs in the night."
+   },
+   "dawn": {
+    "ref": "Isaiah 50:4",
+    "text": "He wakeneth morning by morning, he wakeneth mine ear to hear as the learned."
+   },
+   "noon": {
+    "ref": "Psalm 90:17",
+    "text": "And let the beauty of the LORD our God be upon us: and establish thou the work of our hands upon us; yea, the work of our hands establish thou it."
+   },
+   "evening": {
+    "ref": "Zechariah 14:7",
+    "text": "But it shall be one day which shall be known to the LORD, not day, nor night: but it shall come to pass, that at evening time it shall be light."
+   }
+  },
+  {
+   "midnight": {
+    "ref": "Isaiah 21:12",
+    "text": "The watchman said, The morning cometh, and also the night: if ye will enquire, enquire ye: return, come."
+   },
+   "dawn": {
+    "ref": "Genesis 32:26",
+    "text": "And he said, Let me go, for the day breaketh. And he said, I will not let thee go, except thou bless me."
+   },
+   "noon": {
+    "ref": "Acts 10:9",
+    "text": "Peter went up upon the housetop to pray about the sixth hour."
+   },
+   "evening": {
+    "ref": "Psalm 104:23",
+    "text": "Man goeth forth unto his work and to his labour until the evening."
+   }
+  },
+  {
+   "midnight": {
+    "ref": "Psalm 134:1",
+    "text": "Behold, bless ye the LORD, all ye servants of the LORD, which by night stand in the house of the LORD."
+   },
+   "dawn": {
+    "ref": "Hosea 6:3",
+    "text": "Then shall we know, if we follow on to know the LORD: his going forth is prepared as the morning."
+   },
+   "noon": {
+    "ref": "Ecclesiastes 11:4",
+    "text": "He that observeth the wind shall not sow; and he that regardeth the clouds shall not reap."
+   },
+   "evening": {
+    "ref": "Ruth 3:18",
+    "text": "Sit still, my daughter, until thou know how the matter will fall: for the man will not be in rest, until he have finished the thing this day."
+   }
+  },
+  {
+   "midnight": {
+    "ref": "Psalm 16:7",
+    "text": "I will bless the LORD, who hath given me counsel: my reins also instruct me in the night seasons."
+   },
+   "dawn": {
+    "ref": "2 Samuel 23:4",
+    "text": "And he shall be as the light of the morning, when the sun riseth, even a morning without clouds; as the tender grass springing out of the earth by clear shining after rain."
+   },
+   "noon": {
+    "ref": "Nehemiah 4:6",
+    "text": "So built we the wall; and all the wall was joined together unto the half thereof: for the people had a mind to work."
+   },
+   "evening": {
+    "ref": "Mark 4:35",
+    "text": "And the same day, when the even was come, he saith unto them, Let us pass over unto the other side."
+   }
+  },
+  {
+   "midnight": {
+    "ref": "Song of Solomon 5:2",
+    "text": "I sleep, but my heart waketh: it is the voice of my beloved that knocketh."
+   },
+   "dawn": {
+    "ref": "Psalm 57:8",
+    "text": "Awake up, my glory; awake, psaltery and harp: I myself will awake early."
+   },
+   "noon": {
+    "ref": "Isaiah 30:15",
+    "text": "In returning and rest shall ye be saved; in quietness and in confidence shall be your strength."
+   },
+   "evening": {
+    "ref": "Psalm 65:8",
+    "text": "Thou makest the outgoings of the morning and evening to rejoice."
+   }
+  },
+  {
+   "midnight": {
+    "ref": "Luke 6:12",
+    "text": "And it came to pass in those days, that he went out into a mountain to pray, and continued all night in prayer to God."
+   },
+   "dawn": {
+    "ref": "Psalm 88:13",
+    "text": "But unto thee have I cried, O LORD; and in the morning shall my prayer prevent thee."
+   },
+   "noon": {
+    "ref": "Proverbs 24:27",
+    "text": "Prepare thy work without, and make it fit for thyself in the field; and afterwards build thine house."
+   },
+   "evening": {
+    "ref": "Psalm 92:2",
+    "text": "To shew forth thy lovingkindness in the morning, and thy faithfulness every night."
+   }
+  }
+ ]
+}
