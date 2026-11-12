@@ -94,6 +94,20 @@ p{margin:0}
 .btn.small{padding:10px 16px;font-size:12px}
 .btn[hidden]{display:none}
 
+/* ---- menu (narrow screens) ---- */
+.menu-btn{display:none;background:transparent;border:1px solid var(--fg);color:var(--fg);font-family:var(--font-ui);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 12px;cursor:pointer}
+.menu-btn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.menu-panel{border-top:1px solid var(--line);background:var(--bg);max-height:calc(100vh - 70px);overflow:auto}
+.menu-panel .wrap{display:grid;padding-block:6px 14px}
+.menu-panel a{font-family:var(--font-ui);font-size:14px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--fg-2);padding:14px 0;border-bottom:1px solid var(--line)}
+.menu-panel a:last-child{border-bottom:0;color:var(--fg)}
+.menu-panel a:hover{color:var(--fg)}
+@media (max-width:1120px){.menu-btn{display:inline-flex}}
+@media (min-width:1121px){.menu-panel{display:none}}
+@media (max-width:400px){.brand small{display:none}.nav-right{gap:8px}}
+@media (max-width:340px){.theme button{padding:9px 6px}.menu-btn{padding:9px 8px}.brand{gap:8px}}
+section[id],div[id="group"],div[id="quote"]{scroll-margin-top:64px}
+
 /* ---- theme switch ---- */
 .nav-right{display:flex;align-items:center;gap:12px}
 .theme{display:inline-flex;border:1px solid var(--line);font-family:var(--font-ui);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
@@ -551,8 +565,23 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <button type="button" id="themeDark" aria-pressed="false">Dark</button>
       </div>
       <a class="btn small" href="https://levmontgomery.substack.com/" target="_blank" rel="noopener">Read on Substack</a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel">Menu</button>
     </div>
   </div>
+  <nav class="menu-panel" id="menuPanel" aria-label="Site menu" hidden>
+    <div class="wrap">
+      <a href="#hours">The Lines</a>
+      <a href="#latest">Latest</a>
+      <a href="#books">Books</a>
+      <a href="#vanguard">The Vanguard</a>
+      <a href="#house">The House</a>
+      <a href="#founder">Founder</a>
+      <a href="#press">Press</a>
+      <a href="#questions">Questions</a>
+      <a href="#contact">Contact</a>
+      <a href="https://levmontgomery.substack.com/" target="_blank" rel="noopener">Read on Substack</a>
+    </div>
+  </nav>
 </header>
 
 <main id="top">
@@ -1018,6 +1047,13 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);say('Selected')}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){say('Copied')},fallback)}else{fallback()}
   });
+
+  // Menu for narrow screens
+  var mBtn=document.getElementById('menuBtn'),mPanel=document.getElementById('menuPanel');
+  function setMenu(open){mPanel.hidden=!open;mBtn.setAttribute('aria-expanded',String(open));mBtn.textContent=open?'Close':'Menu'}
+  mBtn.addEventListener('click',function(){setMenu(mPanel.hidden)});
+  mPanel.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!mPanel.hidden){setMenu(false);mBtn.focus()}});
 
   // Theme switch: explicit choice wins over the device setting and is remembered on this device
   var root=document.documentElement,bL=document.getElementById('themeLight'),bD=document.getElementById('themeDark');
