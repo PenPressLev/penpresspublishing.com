@@ -498,7 +498,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
             <input type="email" id="lettersEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
             <button class="btn solid" type="submit">Join</button>
           </form>
-          <p class="note" id="lettersNote">No spam, no selling your address. Unsubscribe with one click.</p>
+          <p class="note" id="lettersNote">No spam, no selling your address. Joining opens your own email with the request filled in.</p>
         </div>
       </div>
     </div>
@@ -771,13 +771,17 @@ footer .links a{color:var(--fg-2);text-decoration:none}
   if(window.matchMedia){matchMedia('(prefers-color-scheme: dark)').addEventListener('change',paint)}
   paint();
 
-  // Letters signup — wire LETTERS_ENDPOINT to your list provider (Buttondown, Kit, Mailchimp) at deploy time
+  // Letters signup: with no list provider set, composes a request to the house in the visitor's own mail app
   var LETTERS_ENDPOINT='';
   document.getElementById('lettersForm').addEventListener('submit',function(e){
     e.preventDefault();
     var input=document.getElementById('lettersEmail'),note=document.getElementById('lettersNote');
     if(!input.validity.valid){note.textContent='Enter a full email address to join.';input.focus();return}
-    if(!LETTERS_ENDPOINT){note.textContent='The list is being set up. For now, write to lev@penpresspublishing.com.';return}
+    if(!LETTERS_ENDPOINT){
+      var url='mailto:lev@penpresspublishing.com?subject='+encodeURIComponent('Letters from the House: please add me')+'&body='+encodeURIComponent('Please add me to Letters from the House.\n\nEmail: '+input.value.trim());
+      e.target.dataset.mailto=url;
+      note.textContent='Your email should now be open with the request ready to send. If nothing opened, write to lev@penpresspublishing.com.';
+      window.location.href=url;return}
     fetch(LETTERS_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:input.value})})
       .then(function(r){note.textContent=r.ok?'You are on the list. Welcome to the house.':'That did not go through. Try again in a moment.'})
       .catch(function(){note.textContent='That did not go through. Try again in a moment.'});

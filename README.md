@@ -14,7 +14,7 @@ Repository settings: **Settings, Pages, Source: GitHub Actions**, custom domain 
 The page points to the Substack and does not list post titles: Substack refuses automated requests from GitHub's servers, so a title feed cannot be kept current here.
 
 ## Letters from the House (email list)
-In `index.html`, set `LETTERS_ENDPOINT` to the list provider's subscribe address. Until it is set, the form points readers to the house email.
+With no list provider set, "Join" opens the visitor's own email with a request addressed to the house. To use a list provider later, set `LETTERS_ENDPOINT` in `index.html` to its subscribe address.
 
 ## Order buttons
 "Order Direct" links to the Contact section until the store address is supplied. "On Amazon" buttons carry the product links supplied by the Founder; *A Light Has Come* opens an Amazon search for the title until its product link is supplied.
