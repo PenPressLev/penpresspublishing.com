@@ -189,19 +189,18 @@ section{padding-block:clamp(72px,9vw,128px)}
 .rail-ticks{display:flex;justify-content:space-between;font-family:var(--font-ui);font-size:11px;letter-spacing:.16em;color:var(--fg-3);margin-top:12px;text-transform:uppercase}
 .now-label{font-family:var(--font-ui);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-2)}
 .now-label b{color:var(--fg);font-weight:500}
-.lines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;padding:1px;margin-top:48px}
+.lines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:1px;padding:1px;margin-top:48px}
 .line{background:var(--bg);box-shadow:0 0 0 1px var(--line);padding:30px 28px 32px;min-width:0;display:flex;flex-direction:column;gap:14px;transition:background .25s}
-.line:hover{background:color-mix(in srgb,var(--bg-2) 45%,var(--bg))}
+.line:hover{background:var(--bg)}
 .line .when{font-family:var(--font-ui);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-3);display:flex;justify-content:space-between;gap:10px}
 .line .when i{font-style:normal;color:var(--fg-2)}
-.line h3{font-size:30px;font-weight:500}
+.line h3{font-size:28px;font-weight:500;min-height:2.1em}
 .line h3 sup{font-family:var(--font-ui);font-size:11px;vertical-align:top;margin-left:2px;color:var(--fg-3)}
-.line p{color:var(--fg-2);font-size:17px;font-weight:300;flex:1}
+.line p{color:var(--fg-2);font-size:17px;font-weight:300;flex:1;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .line .tier{font-family:var(--font-ui);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-3);border-top:1px solid var(--line);padding-top:12px}
-.line.live,.line.live:hover{background:var(--bg-2);box-shadow:0 0 0 1px var(--line),inset 0 4px 0 var(--fg)}
-.line.live .when span::after{content:" · Live now";color:var(--fg);font-weight:600}
-.line.live h3{color:var(--fg)}
-.line.live .when i::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--fg);margin-right:8px;vertical-align:1px}
+.line.live .when span{color:var(--fg);font-weight:600}
+.line.live .when span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--fg);margin-right:8px;vertical-align:1px}
+.line.live .when span::after{content:" · Live now"}
 @media (max-width:980px){.lines{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.lines{grid-template-columns:1fr}}
 
@@ -650,64 +649,64 @@ footer .links a{color:var(--fg-2);text-decoration:none}
 
       <div class="lines" id="lines">
         <article class="line" data-start="5" data-end="9" data-days="1,2,3,4,5">
-          <div class="when"><span>Weekdays · Morning</span><i>5–9 AM</i></div>
+          <div class="when"><span>In season</span><i>Weekdays · 5–9 AM</i></div>
           <h3>Morning Mastery<sup>™</sup></h3>
-          <p>The flagship weekday devotional. One passage of Scripture, one truth to carry, one prayer. Built to be read before the day gets its hands on you.</p>
-          <div class="tier">Paid · Substack &amp; Facebook</div>
+          <p>The weekday devotional that meets you before the day does. One passage of Scripture, one truth to carry, and one prayer, written to steady your first hour and stay with you through the rest.</p>
+          <div class="tier">Devotional · Substack &amp; Facebook</div>
         </article>
         <article class="line" data-start="17" data-end="21" data-days="0">
-          <div class="when"><span>Sunday · Evening</span><i>5–9 PM</i></div>
+          <div class="when"><span>In season</span><i>Sundays · 5–9 PM</i></div>
           <h3>The Inner Court</h3>
-          <p>Sunday-evening prayer formation. Not tips on praying; a room to pray in.</p>
-          <div class="tier">Hybrid · Substack</div>
+          <p>Sunday evening, set apart for prayer. Each week offers one passage and a quiet way into it, written for those who want less advice about praying and more room to actually pray.</p>
+          <div class="tier">Prayer · Substack</div>
         </article>
         <article class="line" data-start="9" data-end="21" data-days="1,2,3,4,5">
-          <div class="when"><span>Weekdays</span><i>Civic</i></div>
+          <div class="when"><span>In season</span><i>Weekdays</i></div>
           <h3>The Plumb Line</h3>
-          <p>Civic discipleship for Christians who want to think clearly about public life. Formational, never partisan, and checked against its sources before it is published. This season runs through the third week of December and resumes in January 2027.</p>
-          <div class="tier">Hybrid · Substack</div>
+          <p>Clear thinking for Christians in public life. Each piece weighs a civic question against Scripture and verified fact, forming convictions that hold whichever way the headlines happen to lean.</p>
+          <div class="tier">Civic · Substack</div>
         </article>
         <article class="line" data-start="9" data-end="21" data-days="1,2,3,4,5">
-          <div class="when"><span>Weekdays</span><i>Essay</i></div>
+          <div class="when"><span>In season</span><i>Weekdays</i></div>
           <h3>The Pen &amp; Press Exposition</h3>
-          <p>Exposition and conviction essays for readers who still want an argument made all the way through.</p>
-          <div class="tier">Substack</div>
+          <p>Essays that follow an argument all the way through. Scripture is opened carefully and applied honestly, for readers who would rather be persuaded by the text than entertained around it.</p>
+          <div class="tier">Essays · Substack</div>
         </article>
         <article class="line" data-start="0" data-end="24" data-days="0,1,2,3,4,5,6">
-          <div class="when"><span>Four watches</span><i>On this site</i></div>
+          <div class="when"><span>Every day</span><i>On this site</i></div>
           <h3>Lightning Scripture<sup>™</sup></h3>
-          <p>Scripture at speed, kept on this page in The Four Watches: a strike at midnight, sunrise, noon, and sunset, moving through the whole Bible in the King James Version.</p>
-          <div class="tier">Free · The Four Watches</div>
+          <p>Scripture at the speed of a glance. A single verse meets you at midnight, sunrise, noon, and sunset in The Four Watches on this page, moving through the whole Bible month by month.</p>
+          <div class="tier">Scripture · The Four Watches</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
-          <div class="when"><span>Season closed</span><i>Long form</i></div>
+          <div class="when"><span>Season closed</span><i>Archive</i></div>
           <h3>The King’s Hour</h3>
-          <p>A teaching series through Ecclesiastes, read slowly and argued carefully. The series closed in October 2026; the manuscript follows.</p>
-          <div class="tier">Paid archive · Substack</div>
+          <p>A slow, careful reading of Ecclesiastes for anyone who has wondered what lasts. Ten teachings follow the Preacher from vapor to wisdom and end where he does, with the fear of God.</p>
+          <div class="tier">Teaching · Paid archive</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="6">
-          <div class="when"><span>Season closed</span><i>Family</i></div>
+          <div class="when"><span>Season closed</span><i>Archive</i></div>
           <h3>The Hearth</h3>
-          <p>Christian family formation for the household that intends to stay one. Written for the table, not the timeline. The season closed October 15, 2026.</p>
-          <div class="tier">Paid archive · Substack</div>
+          <p>Formation for the Christian household. Each reading brings one passage to the family table, written for parents and grandparents who mean to hand down a living faith to the children watching them.</p>
+          <div class="tier">Family · Paid archive</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="0,1,2,3,4,5,6">
-          <div class="when"><span>Resting</span><i>Evening</i></div>
+          <div class="when"><span>Resting</span><i>Evenings</i></div>
           <h3>After Hours With God<sup>™</sup></h3>
-          <p>A short evening liturgy for the last hour of the day, read and heard under the care of the One who neither slumbers nor sleeps. Resting for now; expected to return in 2027.</p>
-          <div class="tier">Paid archive · Substack</div>
+          <p>An evening liturgy for the last hour of the day. Scripture, stillness, and a blessing before sleep, offered to the weary in the care of the One who neither slumbers nor sleeps.</p>
+          <div class="tier">Evening · Paid archive</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
-          <div class="when"><span>Coming 2027</span><i>Parables</i></div>
+          <div class="when"><span>Coming 2027</span><i>New section</i></div>
           <h3>Pen &amp; Press Parables</h3>
-          <p>Short original parables: everyday scenes that open onto something larger. Read in a few minutes, remembered for days. A section of its own in 2027.</p>
-          <div class="tier">Substack · 2027</div>
+          <p>Short original parables for an unhurried mind. Each begins somewhere ordinary and opens quietly onto the kingdom of God, leaving you with something to turn over long after the last line.</p>
+          <div class="tier">Parables · Substack</div>
         </article>
         <article class="line" data-start="0" data-end="0" data-days="1,2,3,4,5">
-          <div class="when"><span>Coming 2027</span><i>Fiction</i></div>
+          <div class="when"><span>Coming 2027</span><i>New section</i></div>
           <h3>Vanguard Flash</h3>
-          <p>Short fiction: stories that carry weight in a few hundred words. A new section in 2027.</p>
-          <div class="tier">Substack · 2027</div>
+          <p>Short fiction with long shadows. Complete stories told in a few hundred words, where ordinary people meet the weight of grace, conscience, and consequence in the space of a single scene.</p>
+          <div class="tier">Fiction · Substack</div>
         </article>
       </div>
     </div>
