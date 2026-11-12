@@ -12,9 +12,11 @@ function split(full){
   return ["The Vanguard", full];
 }
 try {
-  const res = await fetch(FEED, { headers: { "User-Agent": "PenPressSite/1.0" } });
-  if (!res.ok) throw new Error("feed returned " + res.status);
+  let res = await fetch(FEED, { headers: { "User-Agent": "PenPressSite/1.0 (+https://penpresspublishing.com)", "Accept": "application/rss+xml, application/xml, text/xml" } });
+  if (!res.ok) res = await fetch(FEED, { headers: { "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36", "Accept": "application/rss+xml, application/xml, text/xml, */*" } });
   const xml = await res.text();
+  if (!res.ok) throw new Error("feed returned " + res.status + " | " + xml.slice(0, 160).replace(/\s+/g, " "));
+  if (!/<item>/.test(xml)) throw new Error("no items in feed | " + xml.slice(0, 160).replace(/\s+/g, " "));
   const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, 6).map(m => {
     const g = (t) => (m[1].match(new RegExp(`<${t}>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?<\\/${t}>`)) || [])[1]?.trim() ?? "";
     const [line, title] = split(decode(g("title")));
@@ -28,7 +30,7 @@ try {
   const after = before.replace(/(<!-- LATEST:BEGIN[^\n]*\n)[\s\S]*?(\n\s*<!-- LATEST:END -->)/, (_, a, b) => a + block + b);
   if (after === before && !before.includes(items[0].link)) throw new Error("LATEST markers not found in index.html");
   writeFileSync("index.html", after);
-  console.log(`Latest updated with ${items.length} posts.`);
+  console.log(`Latest updated with ${items.length} posts: ` + items.map(i => i.line + " | " + i.title).join(" ; "));
 } catch (e) {
   console.log("Latest left as it was: " + e.message);
 }
