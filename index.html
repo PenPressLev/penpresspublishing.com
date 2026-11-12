@@ -1135,7 +1135,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
   };
   var hero=document.querySelector('.hero'),currentReg='day';
   function setRegister(name){
-    if(name===currentReg)return; currentReg=name; var r=registers[name];
+    if(name===currentReg)return; currentReg=name; lastHero=''; var r=registers[name];
     document.getElementById('heroEyebrow').textContent=r.eyebrow;
     document.getElementById('heroTitle').innerHTML=r.title;
     document.getElementById('heroLede').innerHTML=r.lede;
@@ -1143,6 +1143,17 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     document.getElementById('heroVerse').textContent=r.verse;
     document.getElementById('heroRef').textContent=r.ref;
     hero.className='hero '+name;
+  }
+
+  // The hero's verse turns daily: it is drawn from the same cycle as The Four Watches, half a cycle away,
+  // so the verse at the top of the page is never the one showing on the rail. The fixed verses above are the fallback.
+  var heroWatch={morning:'sunrise',day:'noon',sunday:'sunset',night:'midnight'},lastHero='';
+  function setHeroVerse(name,dayNum){
+    if(!strikes)return;
+    var n=strikes.days.length, st=strikes.days[(dayNum+Math.floor(n/2))%n][heroWatch[name]], id=name+dayNum;
+    if(!st||id===lastHero)return; lastHero=id;
+    document.getElementById('heroVerse').textContent='\u201c'+st.text+'\u201d';
+    document.getElementById('heroRef').textContent=st.ref+' \u00b7 KJV';
   }
 
   // The Four Watches: one strike per watch (midnight, sunrise, noon, sunset), Eastern time; a 31-day cycle through the whole Bible, KJV
@@ -1174,11 +1185,13 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     document.getElementById('nowTime').textContent=fmt.format(now);
     document.getElementById('nowDot').style.left=(h/24*100)+'%';
     var sun=sunTimes(now);
-    setStrike(h,Math.round(Date.UTC(parseInt(p.year,10),parseInt(p.month,10)-1,parseInt(p.day,10))/864e5),sun);
+    var dayNum=Math.round(Date.UTC(parseInt(p.year,10),parseInt(p.month,10)-1,parseInt(p.day,10))/864e5);
+    setStrike(h,dayNum,sun);
     if(sun.rise!=null){document.getElementById('sunrise').style.left=(sun.rise/24*100)+'%'}
     if(sun.set!=null){document.getElementById('sunset').style.left=(sun.set/24*100)+'%'}
     var dusk=sun.set!=null?sun.set+0.5:19.5;
     setRegister(h<5?'night':h<9&&d>=1&&d<=5?'morning':(d===0&&h>=17&&h<dusk)?'sunday':h>=dusk?'night':'day');
+    setHeroVerse(currentReg,dayNum);
     var live=null;
     lines.forEach(function(l){
       var s=parseFloat(l.dataset.start),e=parseFloat(l.dataset.end),days=l.dataset.days.split(',').map(Number);
