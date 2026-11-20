@@ -157,11 +157,13 @@
   {
    "midnight": {
     "ref": "1 Kings 3:5",
-    "text": "In Gibeon the LORD appeared to Solomon in a dream by night: and God said, Ask what I shall give thee."
+    "text": "In Gibeon the LORD appeared to Solomon in a dream by night: and God said, Ask what I shall give thee.",
+    "piece": "Solomon had spent the day at the great high place in Gibeon, where he offered a thousand burnt offerings on one altar. Then he slept. The LORD came to him there in a dream by night with an open hand: Ask what I shall give thee. The young king could have named anything. He named what he lacked. He asked for an understanding heart to judge the people. Then Solomon awoke, and it was a dream, and he went up to Jerusalem and stood before the ark to worship."
    },
    "sunrise": {
     "ref": "Psalm 46:5",
-    "text": "God is in the midst of her; she shall not be moved: God shall help her, and that right early."
+    "text": "God is in the midst of her; she shall not be moved: God shall help her, and that right early.",
+    "piece": "The city in this psalm stands for one reason, that God is in the midst of her, and the help He brings her comes right early."
    },
    "noon": {
     "ref": "Job 11:17",
@@ -169,17 +171,20 @@
    },
    "sunset": {
     "ref": "Ruth 2:17",
-    "text": "So she gleaned in the field until even, and beat out that she had gleaned: and it was about an ephah of barley."
+    "text": "So she gleaned in the field until even, and beat out that she had gleaned: and it was about an ephah of barley.",
+    "piece": "Lord, Ruth gleaned in the field until even and carried home what the day had given; receive what I gathered today and what I left standing. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Esther 6:1",
-    "text": "On that night could not the king sleep, and he commanded to bring the book of records of the chronicles; and they were read before the king."
+    "text": "On that night could not the king sleep, and he commanded to bring the book of records of the chronicles; and they were read before the king.",
+    "piece": "The gallows meant for Mordecai stood finished at Haman’s house, fifty cubits high. On that night the king could not sleep. He called for the book of records, and of all the pages that might have been read, the reader came to the one where Mordecai had exposed a plot against the king’s life and received nothing for it. By the next day Haman was leading Mordecai on horseback through the street of the city. God is not named anywhere in this book. The king’s lost sleep is told without comment."
    },
    "sunrise": {
     "ref": "Psalm 57:8",
-    "text": "Awake up, my glory; awake, psaltery and harp: I myself will awake early."
+    "text": "Awake up, my glory; awake, psaltery and harp: I myself will awake early.",
+    "piece": "David sang this while hiding from Saul in a cave, and the first thing he roused that morning was his own praise."
    },
    "noon": {
     "ref": "Psalm 37:6",
@@ -187,17 +192,20 @@
    },
    "sunset": {
     "ref": "1 Kings 18:36",
-    "text": "And it came to pass at the time of the offering of the evening sacrifice, that Elijah the prophet came near, and said, LORD God of Abraham, Isaac, and of Israel, let it be known this day that thou art God in Israel, and that I am thy servant, and that I have done all these things at thy word."
+    "text": "And it came to pass at the time of the offering of the evening sacrifice, that Elijah the prophet came near, and said, LORD God of Abraham, Isaac, and of Israel, let it be known this day that thou art God in Israel, and that I am thy servant, and that I have done all these things at thy word.",
+    "piece": "LORD God of Abraham, Isaac, and of Israel, at the hour of the evening sacrifice Elijah asked that You be known as God; let that be what I want from this day. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Job 35:10",
-    "text": "But none saith, Where is God my maker, who giveth songs in the night;"
+    "text": "But none saith, Where is God my maker, who giveth songs in the night;",
+    "piece": "Elihu is the youngest man at the ash heap, and he has waited through the whole long argument to speak. His complaint is about the way men pray. They cry out by reason of the arm of the mighty, he says, and there they stop. None of them asks the better question: Where is God my maker, who giveth songs in the night? Elihu leaves this in the record for every sufferer who comes after Job. The night has a Giver, and one of the things He gives in it is a song."
    },
    "sunrise": {
     "ref": "Psalm 59:16",
-    "text": "But I will sing of thy power; yea, I will sing aloud of thy mercy in the morning: for thou hast been my defence and refuge in the day of my trouble."
+    "text": "But I will sing of thy power; yea, I will sing aloud of thy mercy in the morning: for thou hast been my defence and refuge in the day of my trouble.",
+    "piece": "With Saul’s men watching his house through the night to kill him, David settled what he would be doing in the morning, which was singing aloud of mercy."
    },
    "noon": {
     "ref": "Psalm 84:11",
@@ -205,17 +213,20 @@
    },
    "sunset": {
     "ref": "1 Chronicles 16:40",
-    "text": "To offer burnt offerings unto the LORD upon the altar of the burnt offering continually morning and evening, and to do according to all that is written in the law of the LORD, which he commanded Israel;"
+    "text": "To offer burnt offerings unto the LORD upon the altar of the burnt offering continually morning and evening, and to do according to all that is written in the law of the LORD, which he commanded Israel;",
+    "piece": "LORD, Your priests laid the offering on the altar every morning and every evening as it is written; let this evening find me before You as surely as the morning. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 8:3",
-    "text": "When I consider thy heavens, the work of thy fingers, the moon and the stars, which thou hast ordained;"
+    "text": "When I consider thy heavens, the work of thy fingers, the moon and the stars, which thou hast ordained;",
+    "piece": "David had been a shepherd, and a shepherd learns the night sky from underneath it. In this psalm he looks up and calls the heavens the work of God’s fingers. Elsewhere Scripture speaks of His arm. Here David says fingers, as of a craftsman setting stones. The moon and the stars are ordained, each put in its place. Then comes the question the sight draws out of him: What is man, that thou art mindful of him? He asks it at night, when a man can see how far up it goes."
    },
    "sunrise": {
     "ref": "Psalm 113:3",
-    "text": "From the rising of the sun unto the going down of the same the LORD’s name is to be praised."
+    "text": "From the rising of the sun unto the going down of the same the LORD’s name is to be praised.",
+    "piece": "The psalm sets the LORD’s praise to run the whole length of the sun’s road, which leaves no hour of this day outside it."
    },
    "noon": {
     "ref": "Psalm 128:2",
@@ -223,17 +234,20 @@
    },
    "sunset": {
     "ref": "Ezra 9:5",
-    "text": "And at the evening sacrifice I arose up from my heaviness; and having rent my garment and my mantle, I fell upon my knees, and spread out my hands unto the LORD my God,"
+    "text": "And at the evening sacrifice I arose up from my heaviness; and having rent my garment and my mantle, I fell upon my knees, and spread out my hands unto the LORD my God,",
+    "piece": "LORD my God, Ezra rose from his heaviness at the evening sacrifice and spread out his hands to You; I spread out mine, with the day’s sin in them, and ask Your mercy. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 16:7",
-    "text": "I will bless the LORD, who hath given me counsel: my reins also instruct me in the night seasons."
+    "text": "I will bless the LORD, who hath given me counsel: my reins also instruct me in the night seasons.",
+    "piece": "David blesses the LORD for counsel, and then says something strange about where the counsel reaches him. My reins instruct me in the night. The reins are the kidneys, the old word for the deepest inward part of a man. David means that what the LORD told him by day goes on teaching him after he lies down, from the inside, when no one is speaking. Two verses later he says, my flesh also shall rest in hope. He lay down as a man who had been taught."
    },
    "sunrise": {
     "ref": "Psalm 119:147",
-    "text": "I prevented the dawning of the morning, and cried: I hoped in thy word."
+    "text": "I prevented the dawning of the morning, and cried: I hoped in thy word.",
+    "piece": "The psalmist was awake before the dawn was, and what he had to hold in the dark was a word he had already been given."
    },
    "noon": {
     "ref": "Proverbs 14:23",
@@ -241,17 +255,20 @@
    },
    "sunset": {
     "ref": "Psalm 4:4",
-    "text": "Stand in awe, and sin not: commune with your own heart upon your bed, and be still. Selah."
+    "text": "Stand in awe, and sin not: commune with your own heart upon your bed, and be still. Selah.",
+    "piece": "LORD, I come to my bed in awe of You; search my heart with me while I am still, and let me carry no sin into sleep. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 17:3",
-    "text": "Thou hast proved mine heart; thou hast visited me in the night; thou hast tried me, and shalt find nothing; I am purposed that my mouth shall not transgress."
+    "text": "Thou hast proved mine heart; thou hast visited me in the night; thou hast tried me, and shalt find nothing; I am purposed that my mouth shall not transgress.",
+    "piece": "David asks for a hearing in this psalm, and he offers the night as his evidence. Thou hast visited me in the night, he says. Thou hast tried me. He is speaking of the hours when a man has no audience and nothing to perform, and he says the LORD came then and examined him. It is a bold thing to put in a prayer. David knew his own sins and confessed them in other psalms. Here he claims one thing: in this matter, against these accusers, the night visit found his mouth clean."
    },
    "sunrise": {
     "ref": "Psalm 139:9-10",
-    "text": "If I take the wings of the morning, and dwell in the uttermost parts of the sea; Even there shall thy hand lead me, and thy right hand shall hold me."
+    "text": "If I take the wings of the morning, and dwell in the uttermost parts of the sea; Even there shall thy hand lead me, and thy right hand shall hold me.",
+    "piece": "David imagines flying as far as the morning can reach and coming down beyond the sea, and finds the hand that leads him already there to hold him."
    },
    "noon": {
     "ref": "Proverbs 16:3",
@@ -259,17 +276,20 @@
    },
    "sunset": {
     "ref": "Psalm 74:16",
-    "text": "The day is thine, the night also is thine: thou hast prepared the light and the sun."
+    "text": "The day is thine, the night also is thine: thou hast prepared the light and the sun.",
+    "piece": "LORD, the day was Yours and the night is Yours also; I give You back the one and trust You with the other. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 63:6",
-    "text": "When I remember thee upon my bed, and meditate on thee in the night watches."
+    "text": "When I remember thee upon my bed, and meditate on thee in the night watches.",
+    "piece": "The heading places David in the wilderness of Judah, a dry and thirsty land where no water is. His bed there was the ground. He writes that he remembers God upon it, and thinks on Him through the night watches, the hours an army divides among its sentries. David knew those hours as a soldier knows them. Here he spends them another way. The next line tells where it left him: in the shadow of thy wings will I rejoice."
    },
    "sunrise": {
     "ref": "Psalm 143:8",
-    "text": "Cause me to hear thy lovingkindness in the morning; for in thee do I trust: cause me to know the way wherein I should walk; for I lift up my soul unto thee."
+    "text": "Cause me to hear thy lovingkindness in the morning; for in thee do I trust: cause me to know the way wherein I should walk; for I lift up my soul unto thee.",
+    "piece": "David asks for two things by morning, to hear God’s lovingkindness and to know the way he should walk, and he asks for them in that order."
    },
    "noon": {
     "ref": "Proverbs 24:27",
@@ -277,17 +297,20 @@
    },
    "sunset": {
     "ref": "Psalm 92:1-2",
-    "text": "It is a good thing to give thanks unto the LORD, and to sing praises unto thy name, O most High: To shew forth thy lovingkindness in the morning, and thy faithfulness every night,"
+    "text": "It is a good thing to give thanks unto the LORD, and to sing praises unto thy name, O most High: To shew forth thy lovingkindness in the morning, and thy faithfulness every night,",
+    "piece": "O most High, it is a good thing to give You thanks; this morning showed Your lovingkindness, and tonight I will tell of Your faithfulness. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 77:6",
-    "text": "I call to remembrance my song in the night: I commune with mine own heart: and my spirit made diligent search."
+    "text": "I call to remembrance my song in the night: I commune with mine own heart: and my spirit made diligent search.",
+    "piece": "Asaph could not sleep, and he says so: thou holdest mine eyes waking. So he went back through his own past. He called to remembrance a song he once had in the night and searched himself for where it had gone. For several verses the search goes badly. Hath God forgotten to be gracious? Then he stops looking inward. I will remember the works of the LORD, he says, and the psalm walks out to the sea, where God led His people like a flock by the hand of Moses and Aaron."
    },
    "sunrise": {
     "ref": "Proverbs 4:18",
-    "text": "But the path of the just is as the shining light, that shineth more and more unto the perfect day."
+    "text": "But the path of the just is as the shining light, that shineth more and more unto the perfect day.",
+    "piece": "Solomon likens the path of the just to first light, which is faint when it begins and has never once failed to become full day."
    },
    "noon": {
     "ref": "Song of Solomon 1:7",
@@ -295,17 +318,20 @@
    },
    "sunset": {
     "ref": "Psalm 119:148",
-    "text": "Mine eyes prevent the night watches, that I might meditate in thy word."
+    "text": "Mine eyes prevent the night watches, that I might meditate in thy word.",
+    "piece": "LORD, the psalmist’s eyes were open before the night watches to meditate in Your word; give me one line of it to take with me into the dark. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 91:5",
-    "text": "Thou shalt not be afraid for the terror by night; nor for the arrow that flieth by day;"
+    "text": "Thou shalt not be afraid for the terror by night; nor for the arrow that flieth by day;",
+    "piece": "The psalm does not pretend the night is empty. It names the thing: the terror by night. A verse later it names the pestilence that walketh in darkness. The writer knew what comes at people after dark. What he sets against it is a dwelling. He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. The words that follow are spoken to the one who has made the LORD his habitation: Thou shalt not be afraid."
    },
    "sunrise": {
     "ref": "Proverbs 8:17",
-    "text": "I love them that love me; and those that seek me early shall find me."
+    "text": "I love them that love me; and those that seek me early shall find me.",
+    "piece": "Wisdom speaks here in her own voice, and what she pledges to those who seek her early is that they will find her."
    },
    "noon": {
     "ref": "Isaiah 32:2",
@@ -313,17 +339,20 @@
    },
    "sunset": {
     "ref": "Jeremiah 31:25",
-    "text": "For I have satiated the weary soul, and I have replenished every sorrowful soul."
+    "text": "For I have satiated the weary soul, and I have replenished every sorrowful soul.",
+    "piece": "Lord, You have said that You satiate the weary soul and replenish every sorrowful soul; I come to You weary tonight. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 119:55",
-    "text": "I have remembered thy name, O LORD, in the night, and have kept thy law."
+    "text": "I have remembered thy name, O LORD, in the night, and have kept thy law.",
+    "piece": "The verse before this one calls the psalmist’s lodging the house of my pilgrimage. He is a traveler staying somewhere that is not home, and he says God’s statutes have been his songs there. Then he tells what he does after dark. I have remembered thy name, O LORD, in the night. What he called to mind was a name. The obedience comes after it, in the same sentence. He rose in the morning knowing whose law it was."
    },
    "sunrise": {
     "ref": "Isaiah 33:2",
-    "text": "O LORD, be gracious unto us; we have waited for thee: be thou their arm every morning, our salvation also in the time of trouble."
+    "text": "O LORD, be gracious unto us; we have waited for thee: be thou their arm every morning, our salvation also in the time of trouble.",
+    "piece": "Judah’s prayer in a time of trouble asks for nothing laid up in store, only that the LORD be their arm again every morning."
    },
    "noon": {
     "ref": "Isaiah 49:10",
@@ -331,17 +360,20 @@
    },
    "sunset": {
     "ref": "Daniel 9:21",
-    "text": "Yea, whiles I was speaking in prayer, even the man Gabriel, whom I had seen in the vision at the beginning, being caused to fly swiftly, touched me about the time of the evening oblation."
+    "text": "Yea, whiles I was speaking in prayer, even the man Gabriel, whom I had seen in the vision at the beginning, being caused to fly swiftly, touched me about the time of the evening oblation.",
+    "piece": "Lord, while Daniel was yet speaking in prayer, about the time of the evening oblation, Your answer was already on its way; hear me now as I confess and ask. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 119:62",
-    "text": "At midnight I will rise to give thanks unto thee because of thy righteous judgments."
+    "text": "At midnight I will rise to give thanks unto thee because of thy righteous judgments.",
+    "piece": "No one is made to get up at midnight to give thanks. The psalmist says he will do it, and gives his reason: because of thy righteous judgments. He is thankful that God rules rightly, and the thought will not let him lie there. The line before this one explains the hour. The bands of the wicked have robbed me, he says. He has been wronged. His answer to the wrong is to rise in the dark and thank the Judge."
    },
    "sunrise": {
     "ref": "Isaiah 50:4",
-    "text": "The Lord GOD hath given me the tongue of the learned, that I should know how to speak a word in season to him that is weary: he wakeneth morning by morning, he wakeneth mine ear to hear as the learned."
+    "text": "The Lord GOD hath given me the tongue of the learned, that I should know how to speak a word in season to him that is weary: he wakeneth morning by morning, he wakeneth mine ear to hear as the learned.",
+    "piece": "The Servant in Isaiah has a word for the weary because he was wakened morning by morning to listen before he spoke."
    },
    "noon": {
     "ref": "Isaiah 58:10",
@@ -349,17 +381,20 @@
    },
    "sunset": {
     "ref": "Zechariah 14:7",
-    "text": "But it shall be one day which shall be known to the LORD, not day, nor night: but it shall come to pass, that at evening time it shall be light."
+    "text": "But it shall be one day which shall be known to the LORD, not day, nor night: but it shall come to pass, that at evening time it shall be light.",
+    "piece": "LORD, You have spoken of a day known to You when at evening time it shall be light; as this evening comes, hold me to that hope. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 134:1",
-    "text": "Behold, bless ye the LORD, all ye servants of the LORD, which by night stand in the house of the LORD."
+    "text": "Behold, bless ye the LORD, all ye servants of the LORD, which by night stand in the house of the LORD.",
+    "piece": "This is the last of the songs of degrees. It is three verses long, and it is addressed to the night shift. Somewhere in the house of the LORD, after the worshipers had gone home, servants stood at their posts through the dark. Hardly anyone saw them. The psalm turns and speaks to them by their work: ye servants of the LORD, which by night stand in the house of the LORD. Bless Him, it says. Then it blesses them in return: The LORD that made heaven and earth bless thee out of Zion."
    },
    "sunrise": {
     "ref": "Isaiah 58:8",
-    "text": "Then shall thy light break forth as the morning, and thine health shall spring forth speedily: and thy righteousness shall go before thee; the glory of the LORD shall be thy rereward."
+    "text": "Then shall thy light break forth as the morning, and thine health shall spring forth speedily: and thy righteousness shall go before thee; the glory of the LORD shall be thy rereward.",
+    "piece": "The light Isaiah promises here breaks on people who have dealt their bread to the hungry and brought the poor into their house, which is the fast the LORD says He has chosen."
    },
    "noon": {
     "ref": "Jeremiah 17:8",
@@ -367,17 +402,20 @@
    },
    "sunset": {
     "ref": "Malachi 1:11",
-    "text": "For from the rising of the sun even unto the going down of the same my name shall be great among the Gentiles; and in every place incense shall be offered unto my name, and a pure offering: for my name shall be great among the heathen, saith the LORD of hosts."
+    "text": "For from the rising of the sun even unto the going down of the same my name shall be great among the Gentiles; and in every place incense shall be offered unto my name, and a pure offering: for my name shall be great among the heathen, saith the LORD of hosts.",
+    "piece": "LORD of hosts, You have said Your name shall be great from the rising of the sun unto the going down of the same; let it be great in this house as the sun goes down. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Psalm 139:12",
-    "text": "Yea, the darkness hideth not from thee; but the night shineth as the day: the darkness and the light are both alike to thee."
+    "text": "Yea, the darkness hideth not from thee; but the night shineth as the day: the darkness and the light are both alike to thee.",
+    "piece": "David tries the thought out loud. If I say, Surely the darkness shall cover me. He pictures pulling the night over himself like a blanket. Then he answers himself: even the night shall be light about me. Darkness is a condition of human eyes. It hides a man from other men, and it hides the road from him. From God it hides nothing. The darkness and the light are both alike to thee. David does not find this frightening. A few verses on he calls God’s thoughts toward him precious."
    },
    "sunrise": {
     "ref": "Ezekiel 43:2",
-    "text": "And, behold, the glory of the God of Israel came from the way of the east: and his voice was like a noise of many waters: and the earth shined with his glory."
+    "text": "And, behold, the glory of the God of Israel came from the way of the east: and his voice was like a noise of many waters: and the earth shined with his glory.",
+    "piece": "Ezekiel had watched the glory leave the temple toward the east, and years later he saw it come back by the same road, with the earth shining under it."
    },
    "noon": {
     "ref": "Daniel 6:10",
@@ -385,17 +423,20 @@
    },
    "sunset": {
     "ref": "Matthew 14:23",
-    "text": "And when he had sent the multitudes away, he went up into a mountain apart to pray: and when the evening was come, he was there alone."
+    "text": "And when he had sent the multitudes away, he went up into a mountain apart to pray: and when the evening was come, he was there alone.",
+    "piece": "Lord Jesus, when the evening was come You were on the mountain alone, in prayer; teach me to end my day where You ended Yours. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Proverbs 3:24",
-    "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet."
+    "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
+    "piece": "A father is speaking to his son. He has been urging him to hold on to sound wisdom and discretion, and now he tells him what it will mean for his nights. Thou shalt lie down, and thy sleep shall be sweet. The reason comes two verses later: For the LORD shall be thy confidence, and shall keep thy foot from being taken. The father does not tell the boy that nothing sudden will ever come. He tells him who will be there when he lies down."
    },
    "sunrise": {
     "ref": "Hosea 6:3",
-    "text": "Then shall we know, if we follow on to know the LORD: his going forth is prepared as the morning; and he shall come unto us as the rain, as the latter and former rain unto the earth."
+    "text": "Then shall we know, if we follow on to know the LORD: his going forth is prepared as the morning; and he shall come unto us as the rain, as the latter and former rain unto the earth.",
+    "piece": "Hosea says the LORD’s going forth is prepared as the morning, and that those who follow on to know Him shall know."
    },
    "noon": {
     "ref": "Matthew 6:11",
@@ -403,17 +444,20 @@
    },
    "sunset": {
     "ref": "Matthew 20:8",
-    "text": "So when even was come, the lord of the vineyard saith unto his steward, Call the labourers, and give them their hire, beginning from the last unto the first."
+    "text": "So when even was come, the lord of the vineyard saith unto his steward, Call the labourers, and give them their hire, beginning from the last unto the first.",
+    "piece": "Lord of the vineyard, when even was come You called the last first and gave as You chose to give; I come at the day’s end with nothing to claim but Your goodness. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Song of Solomon 3:1",
-    "text": "By night on my bed I sought him whom my soul loveth: I sought him, but I found him not."
+    "text": "By night on my bed I sought him whom my soul loveth: I sought him, but I found him not.",
+    "piece": "The woman in the Song lies awake and looks for the one her soul loves, and he is not there. I sought him, but I found him not. She does not stay in bed with the loss. She rises and goes about the city in the streets, and the watchmen find her, and she asks them one question: Saw ye him whom my soul loveth? A little past them she finds him, and holds him, and will not let him go. The Song lets the not-finding stand on the page before the finding."
    },
    "sunrise": {
     "ref": "Amos 5:8",
-    "text": "Seek him that maketh the seven stars and Orion, and turneth the shadow of death into the morning, and maketh the day dark with night: that calleth for the waters of the sea, and poureth them out upon the face of the earth: The LORD is his name:"
+    "text": "Seek him that maketh the seven stars and Orion, and turneth the shadow of death into the morning, and maketh the day dark with night: that calleth for the waters of the sea, and poureth them out upon the face of the earth: The LORD is his name:",
+    "piece": "Amos points a people busy at their shrines to the One who made the seven stars and Orion and who turns the shadow of death into the morning."
    },
    "noon": {
     "ref": "Matthew 20:4",
@@ -421,17 +465,20 @@
    },
    "sunset": {
     "ref": "Matthew 26:20",
-    "text": "Now when the even was come, he sat down with the twelve."
+    "text": "Now when the even was come, he sat down with the twelve.",
+    "piece": "Lord Jesus, when the even was come You sat down with the twelve, knowing what the night held and who was at the table; let me sit down with You tonight. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Isaiah 26:9",
-    "text": "With my soul have I desired thee in the night; yea, with my spirit within me will I seek thee early: for when thy judgments are in the earth, the inhabitants of the world will learn righteousness."
+    "text": "With my soul have I desired thee in the night; yea, with my spirit within me will I seek thee early: for when thy judgments are in the earth, the inhabitants of the world will learn righteousness.",
+    "piece": "This line comes from a song Isaiah says will be sung in the land of Judah in a day still ahead. The singer has waited for the LORD in the way of His judgments, and the waiting has reached into the night. With my soul have I desired thee in the night. He says with my soul the way a workman says with my hands. The desire is something he does. And he means to be at it again before the sun is up: with my spirit within me will I seek thee early."
    },
    "sunrise": {
     "ref": "Zephaniah 3:5",
-    "text": "The just LORD is in the midst thereof; he will not do iniquity: every morning doth he bring his judgment to light, he faileth not; but the unjust knoweth no shame."
+    "text": "The just LORD is in the midst thereof; he will not do iniquity: every morning doth he bring his judgment to light, he faileth not; but the unjust knoweth no shame.",
+    "piece": "Zephaniah found Jerusalem’s rulers unjust and unashamed, and in the midst of that city the LORD still brought His judgment to light every morning without fail."
    },
    "noon": {
     "ref": "Mark 6:31",
@@ -439,17 +486,20 @@
    },
    "sunset": {
     "ref": "Mark 1:32",
-    "text": "And at even, when the sun did set, they brought unto him all that were diseased, and them that were possessed with devils."
+    "text": "And at even, when the sun did set, they brought unto him all that were diseased, and them that were possessed with devils.",
+    "piece": "Lord Jesus, at even, when the sun did set, they brought You all that were diseased; I bring You tonight the ones I love who are suffering. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Isaiah 30:29",
-    "text": "Ye shall have a song, as in the night when a holy solemnity is kept; and gladness of heart, as when one goeth with a pipe to come into the mountain of the LORD, to the mighty One of Israel."
+    "text": "Ye shall have a song, as in the night when a holy solemnity is kept; and gladness of heart, as when one goeth with a pipe to come into the mountain of the LORD, to the mighty One of Israel.",
+    "piece": "Isaiah is foretelling the fall of the Assyrian, and he tells Judah what they will be doing while it happens. Ye shall have a song, as in the night when a holy solemnity is kept. He means a feast night, with a household awake and singing after dark. Assyria had given Judah other reasons to lie awake. The prophet promises a night when they are up for gladness, going with a pipe to the mountain of the LORD, to the mighty One of Israel."
    },
    "sunrise": {
     "ref": "Malachi 4:2",
-    "text": "But unto you that fear my name shall the Sun of righteousness arise with healing in his wings; and ye shall go forth, and grow up as calves of the stall."
+    "text": "But unto you that fear my name shall the Sun of righteousness arise with healing in his wings; and ye shall go forth, and grow up as calves of the stall.",
+    "piece": "Near the close of the Old Testament, Malachi promises those who fear the LORD’s name a sunrise with healing in its wings, and sees them going forth into it like calves of the stall."
    },
    "noon": {
     "ref": "John 4:6",
@@ -457,17 +507,20 @@
    },
    "sunset": {
     "ref": "Luke 9:12",
-    "text": "And when the day began to wear away, then came the twelve, and said unto him, Send the multitude away, that they may go into the towns and country round about, and lodge, and get victuals: for we are here in a desert place."
+    "text": "And when the day began to wear away, then came the twelve, and said unto him, Send the multitude away, that they may go into the towns and country round about, and lodge, and get victuals: for we are here in a desert place.",
+    "piece": "Lord, when the day began to wear away the twelve saw a desert place and a multitude, and You fed them all; I bring You what this day has left me short of. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Daniel 2:19",
-    "text": "Then was the secret revealed unto Daniel in a night vision. Then Daniel blessed the God of heaven."
+    "text": "Then was the secret revealed unto Daniel in a night vision. Then Daniel blessed the God of heaven.",
+    "piece": "The decree had gone out to slay all the wise men of Babylon, and they sought Daniel and his fellows to be slain. Daniel asked the king for time. Then he went to his house and told his three companions, and asked them to desire mercies of the God of heaven concerning this secret. That night the secret was revealed to Daniel in a vision. Before he went to the king, before a single life was spared, his own included, he blessed the God of heaven. The next four verses are that blessing."
    },
    "sunrise": {
     "ref": "Mark 1:35",
-    "text": "And in the morning, rising up a great while before day, he went out, and departed into a solitary place, and there prayed."
+    "text": "And in the morning, rising up a great while before day, he went out, and departed into a solitary place, and there prayed.",
+    "piece": "The morning after a whole city had gathered at His door, Jesus rose a great while before day and went out to a solitary place to pray."
    },
    "noon": {
     "ref": "John 5:17",
@@ -475,17 +528,20 @@
    },
    "sunset": {
     "ref": "Luke 21:37",
-    "text": "And in the day time he was teaching in the temple; and at night he went out, and abode in the mount that is called the mount of Olives."
+    "text": "And in the day time he was teaching in the temple; and at night he went out, and abode in the mount that is called the mount of Olives.",
+    "piece": "Lord Jesus, by day You taught in the temple and at night You went out to the mount of Olives; my day’s work is done, and I come away from it to the Father. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Matthew 14:25",
-    "text": "And in the fourth watch of the night Jesus went unto them, walking on the sea."
+    "text": "And in the fourth watch of the night Jesus went unto them, walking on the sea.",
+    "piece": "He had sent them into the ship Himself, and gone up into a mountain to pray. By the fourth watch they were in the midst of the sea, tossed with waves, for the wind was contrary. The fourth watch is the last one, the hours before dawn. They had been out there most of the night. That is when He came to them, walking on the water they could not cross. They took Him for a spirit and cried out for fear. He spoke straightway: Be of good cheer; it is I; be not afraid."
    },
    "sunrise": {
     "ref": "Mark 16:2",
-    "text": "And very early in the morning the first day of the week, they came unto the sepulchre at the rising of the sun."
+    "text": "And very early in the morning the first day of the week, they came unto the sepulchre at the rising of the sun.",
+    "piece": "The women came to the sepulchre at sunrise bringing spices for a body, asking one another who would roll away the stone, and found it rolled away already."
    },
    "noon": {
     "ref": "Acts 10:9",
@@ -493,17 +549,20 @@
    },
    "sunset": {
     "ref": "John 12:35",
-    "text": "Then Jesus said unto them, Yet a little while is the light with you. Walk while ye have the light, lest darkness come upon you: for he that walketh in darkness knoweth not whither he goeth."
+    "text": "Then Jesus said unto them, Yet a little while is the light with you. Walk while ye have the light, lest darkness come upon you: for he that walketh in darkness knoweth not whither he goeth.",
+    "piece": "Lord Jesus, You said to walk while we have the light; forgive where I stood still today, and lead me on while the light is with me. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Mark 13:35",
-    "text": "Watch ye therefore: for ye know not when the master of the house cometh, at even, or at midnight, or at the cockcrowing, or in the morning:"
+    "text": "Watch ye therefore: for ye know not when the master of the house cometh, at even, or at midnight, or at the cockcrowing, or in the morning:",
+    "piece": "Jesus is sitting on the mount of Olives, over against the temple, with four of His disciples. They have asked Him when. He gives them no date. He gives them a household: a man gone on a far road, servants each with his work, and a porter commanded to watch. Then He names the hours of the night one by one, at even, at midnight, at the cockcrowing, in the morning. The master may come in any of them. And He widens the charge beyond the four men listening: What I say unto you I say unto all, Watch."
    },
    "sunrise": {
     "ref": "Luke 21:38",
-    "text": "And all the people came early in the morning to him in the temple, for to hear him."
+    "text": "And all the people came early in the morning to him in the temple, for to hear him.",
+    "piece": "In the last days before the cross, all the people came to the temple early in the morning for one purpose, which was to hear Him."
    },
    "noon": {
     "ref": "Acts 26:13",
@@ -511,17 +570,20 @@
    },
    "sunset": {
     "ref": "John 20:19",
-    "text": "Then the same day at evening, being the first day of the week, when the doors were shut where the disciples were assembled for fear of the Jews, came Jesus and stood in the midst, and saith unto them, Peace be unto you."
+    "text": "Then the same day at evening, being the first day of the week, when the doors were shut where the disciples were assembled for fear of the Jews, came Jesus and stood in the midst, and saith unto them, Peace be unto you.",
+    "piece": "Lord Jesus, You came at evening through shut doors to frightened disciples and said, Peace be unto you; come into this house tonight and speak Your peace. Amen."
    }
   },
   {
    "midnight": {
     "ref": "John 3:2",
-    "text": "The same came to Jesus by night, and said unto him, Rabbi, we know that thou art a teacher come from God: for no man can do these miracles that thou doest, except God be with him."
+    "text": "The same came to Jesus by night, and said unto him, Rabbi, we know that thou art a teacher come from God: for no man can do these miracles that thou doest, except God be with him.",
+    "piece": "Nicodemus was a Pharisee and a ruler of the Jews, and he came by night. John does not say why. He opened with a courtesy: Rabbi, we know that thou art a teacher come from God. Jesus answered with what the man needed to hear: Except a man be born again, he cannot see the kingdom of God. Nicodemus appears twice more in this Gospel. The last time he is bringing a hundred pound weight of myrrh and aloes to a tomb, and John still remembers him as the one who first came by night."
    },
    "sunrise": {
     "ref": "John 21:4",
-    "text": "But when the morning was now come, Jesus stood on the shore: but the disciples knew not that it was Jesus."
+    "text": "But when the morning was now come, Jesus stood on the shore: but the disciples knew not that it was Jesus.",
+    "piece": "After a night of fishing that caught nothing, the risen Jesus was standing on the shore when the morning came, before any of them knew who He was."
    },
    "noon": {
     "ref": "1 Corinthians 15:58",
@@ -529,17 +591,20 @@
    },
    "sunset": {
     "ref": "Acts 3:1",
-    "text": "Now Peter and John went up together into the temple at the hour of prayer, being the ninth hour."
+    "text": "Now Peter and John went up together into the temple at the hour of prayer, being the ninth hour.",
+    "piece": "Lord, Peter and John went up at the hour of prayer and found a lame man laid at the gate; make me faithful to the hour, and open my eyes to the one at the gate. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Acts 16:25",
-    "text": "And at midnight Paul and Silas prayed, and sang praises unto God: and the prisoners heard them."
+    "text": "And at midnight Paul and Silas prayed, and sang praises unto God: and the prisoners heard them.",
+    "piece": "They had been beaten with many stripes that day. The jailor thrust them into the inner prison and made their feet fast in the stocks. At midnight Paul and Silas prayed, and sang praises unto God. Luke adds a detail another writer might have left out: and the prisoners heard them. Men lay in the dark of that jail listening to two bleeding strangers sing. When the earthquake came and every door stood open, Paul could call out to the jailor, We are all here."
    },
    "sunrise": {
     "ref": "Romans 13:12",
-    "text": "The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armour of light."
+    "text": "The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armour of light.",
+    "piece": "Paul tells the church that the night is far spent, and that what remains to do before day is to cast off what belongs to the dark and put on the armour of light."
    },
    "noon": {
     "ref": "Galatians 6:9",
@@ -547,17 +612,20 @@
    },
    "sunset": {
     "ref": "Ephesians 4:26",
-    "text": "Be ye angry, and sin not: let not the sun go down upon your wrath:"
+    "text": "Be ye angry, and sin not: let not the sun go down upon your wrath:",
+    "piece": "Father, the sun is going down; I lay my anger down before it sets, and ask You to make right what I cannot. Amen."
    }
   },
   {
    "midnight": {
     "ref": "1 Thessalonians 5:5",
-    "text": "Ye are all the children of light, and the children of the day: we are not of the night, nor of darkness."
+    "text": "Ye are all the children of light, and the children of the day: we are not of the night, nor of darkness.",
+    "piece": "Paul wrote this to a church in Thessalonica that had questions about the day of the Lord. It comes as a thief in the night, he says. Then he tells them it will not overtake them that way. Ye are all the children of light, and the children of the day. A thief surprises the people of a dark house. These believers lived on the same streets and went to bed at the same hour as their neighbors, and Paul says they belong to the day. So he tells them to be sober, and to put on faith and love."
    },
    "sunrise": {
     "ref": "2 Peter 1:19",
-    "text": "We have also a more sure word of prophecy; whereunto ye do well that ye take heed, as unto a light that shineth in a dark place, until the day dawn, and the day star arise in your hearts:"
+    "text": "We have also a more sure word of prophecy; whereunto ye do well that ye take heed, as unto a light that shineth in a dark place, until the day dawn, and the day star arise in your hearts:",
+    "piece": "Peter had been an eyewitness of the majesty on the holy mount, and he still directs us to the written word as to a light in a dark place until the day dawns."
    },
    "noon": {
     "ref": "Colossians 3:23",
@@ -565,17 +633,20 @@
    },
    "sunset": {
     "ref": "Hebrews 4:9",
-    "text": "There remaineth therefore a rest to the people of God."
+    "text": "There remaineth therefore a rest to the people of God.",
+    "piece": "Father, there remains a rest to the people of God; let tonight’s rest be a foretaste of it, through Jesus Christ who has entered in. Amen."
    }
   },
   {
    "midnight": {
     "ref": "Revelation 22:5",
-    "text": "And there shall be no night there; and they need no candle, neither light of the sun; for the Lord God giveth them light: and they shall reign for ever and ever."
+    "text": "And there shall be no night there; and they need no candle, neither light of the sun; for the Lord God giveth them light: and they shall reign for ever and ever.",
+    "piece": "John was in the isle that is called Patmos, for the word of God. Near the end of what he was shown, he saw the holy city coming down, with the throne of God and of the Lamb in it. He wrote this about it: there shall be no night there. No candle is lit in that city, because none is needed. The sun is not needed either. The Lord God giveth them light. The Bible that opens with God saying, Let there be light, closes on a city that asks for no other."
    },
    "sunrise": {
     "ref": "Revelation 22:16",
-    "text": "I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star."
+    "text": "I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star.",
+    "piece": "On the last page of the Bible, Jesus gives His own name as the bright and morning star, the one seen while it is still dark that tells the day is coming."
    },
    "noon": {
     "ref": "Revelation 7:16",
@@ -583,7 +654,8 @@
    },
    "sunset": {
     "ref": "Revelation 21:23",
-    "text": "And the city had no need of the sun, neither of the moon, to shine in it: for the glory of God did lighten it, and the Lamb is the light thereof."
+    "text": "And the city had no need of the sun, neither of the moon, to shine in it: for the glory of God did lighten it, and the Lamb is the light thereof.",
+    "piece": "Lord God, the city to come has no need of the sun, for Your glory lightens it and the Lamb is the light thereof; as this sun sets, set my hope there. Amen."
    }
   }
  ],
