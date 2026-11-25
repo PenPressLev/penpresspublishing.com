@@ -568,7 +568,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
      "name": "Where can I buy the books?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The books are sold on Amazon and direct from the house. Churches, fellowships, and study groups can request a quote for bundles of Before the Day on this page."
+      "text": "The books are sold on Amazon and direct from the house. Churches, fellowships, and study groups can order bundles of Before the Day, from five copies to twenty or more, in the house store."
      }
     }
    ]
@@ -831,51 +831,20 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         <div>
           <p class="eyebrow">First Light Group Orders</p>
           <h3>Bring <em>Before the Day</em> to your fellowship.</h3>
-          <p>Group bundles for churches, fellowships, and study circles, with or without Companion Guides. Bundles above twenty copies are quoted individually. Ask about a complimentary Companion Guide evaluation copy for group leaders.</p>
-          <div class="ctas" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px"><a class="btn small solid" href="#quote">Request a Quote</a></div>
+          <p>Group bundles for churches, fellowships, and study circles, in sets of five, ten, fifteen, and twenty or more, with or without Companion Guides. Every bundle is ordered direct from the house store. Ask about a complimentary Companion Guide evaluation copy for group leaders.</p>
+          <div class="ctas" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px"><a class="btn small solid" href="https://shop.penpresspublishing.com/" target="_blank" rel="noopener">Order Group Bundles</a></div>
         </div>
         <div>
           <ul class="tiers">
+            <li><b>5 copies</b><span>Bundle</span></li>
             <li><b>10 copies</b><span>Bundle</span></li>
             <li><b>15 copies</b><span>Bundle</span></li>
-            <li><b>20 copies</b><span>Bundle</span></li>
-            <li><b>20 or more</b><span>Custom quote</span></li>
+            <li><b>20 or more</b><span>Bundle</span></li>
             <li><b>Companion Guides</b><span>Optional add-on</span></li>
           </ul>
         </div>
       </div>
 
-      <div class="letters quote" id="quote">
-        <div>
-          <p class="eyebrow">Group Quote</p>
-          <h3>Tell us about your group.</h3>
-          <p>Share a few details and the house will reply with a quote. Sending opens your own email with the details filled in, addressed to the Founder. Nothing is stored on this site.</p>
-        </div>
-        <div>
-          <form id="quoteForm" novalidate>
-            <input type="text" id="qName" placeholder="Your name" autocomplete="name" aria-label="Your name" required>
-            <input type="text" id="qGroup" placeholder="Church, fellowship, or group" autocomplete="organization" aria-label="Church, fellowship, or group">
-            <input type="text" id="qPlace" placeholder="City and state" autocomplete="address-level2" aria-label="City and state">
-            <select id="qCopies" aria-label="Number of copies">
-              <option value="">Number of copies</option>
-              <option>10 copies</option>
-              <option>15 copies</option>
-              <option>20 copies</option>
-              <option>More than 20 copies</option>
-            </select>
-            <select id="qGuides" aria-label="Companion Guides">
-              <option value="">Companion Guides?</option>
-              <option>With Companion Guides</option>
-              <option>Without Companion Guides</option>
-              <option>Not sure yet</option>
-            </select>
-            <textarea id="qNote" rows="3" placeholder="Anything else we should know" aria-label="Anything else we should know"></textarea>
-            <button class="btn solid" type="submit">Send Inquiry</button>
-            <button class="btn" type="button" id="quoteCopy" hidden>Copy the Inquiry</button>
-          </form>
-          <p class="note" id="quoteNote">Goes directly to lev@penpresspublishing.com.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -1059,7 +1028,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
         </div>
         <div>
           <h3>Where can I buy the books?</h3>
-          <p>The books are sold on Amazon and direct from the house. Churches, fellowships, and study groups can request a quote for bundles of Before the Day on this page.</p>
+          <p>The books are sold on Amazon and direct from the house. Churches, fellowships, and study groups can order bundles of Before the Day, from five copies to twenty or more, in the house store.</p>
         </div>
       </div>
     </div>
@@ -1072,7 +1041,7 @@ footer .links a{color:var(--fg-2);text-decoration:none}
           <p class="eyebrow">Contact</p>
           <h2>Write to the house.</h2>
         </div>
-        <p>Orders, group quotes, speaking, licensing, and press. One address reaches the Founder directly.</p>
+        <p>Orders, group questions, speaking, licensing, and press. One address reaches the Founder directly.</p>
       </div>
       <div class="contact">
         <div>
@@ -1158,28 +1127,6 @@ footer .links a{color:var(--fg-2);text-decoration:none}
     fetch(LETTERS_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:input.value})})
       .then(function(r){note.textContent=r.ok?'You are on the list. Welcome to the house.':'That did not go through. Try again in a moment.'})
       .catch(function(){note.textContent='That did not go through. Try again in a moment.'});
-  });
-
-  // Group quote: composes an email to the house in the visitor's own mail app; nothing is stored here
-  var qf=document.getElementById('quoteForm'),qNote=document.getElementById('quoteNote'),qCopy=document.getElementById('quoteCopy'),qText='';
-  qf.addEventListener('submit',function(e){
-    e.preventDefault();
-    var v=function(id){return document.getElementById(id).value.trim()},name=v('qName');
-    if(!name){qNote.textContent='Add your name so the house knows who is asking.';document.getElementById('qName').focus();return}
-    var lines=['Name: '+name];
-    if(v('qGroup'))lines.push('Group: '+v('qGroup'));
-    if(v('qPlace'))lines.push('City and state: '+v('qPlace'));
-    if(v('qCopies'))lines.push('Copies: '+v('qCopies'));
-    if(v('qGuides'))lines.push('Companion Guides: '+v('qGuides'));
-    if(v('qNote'))lines.push('','Note: '+v('qNote'));
-    qText='Group quote request for Before the Day\n\n'+lines.join('\n');
-    var url='mailto:lev@penpresspublishing.com?subject='+encodeURIComponent('Group quote request: '+(v('qGroup')||name))+'&body='+encodeURIComponent(qText);
-    qf.dataset.mailto=url; qCopy.hidden=false;
-    qNote.textContent='Your email should now be open with the inquiry ready to send. If nothing opened, copy the inquiry and send it to lev@penpresspublishing.com.';
-    window.location.href=url;
-  });
-  qCopy.addEventListener('click',function(){
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(qText).then(function(){say('Copied')},function(){say('Copy failed')})}else{say('Copy failed')}
   });
 
   // Sunrise and sunset for Washington, Michigan (42.72 N, 83.04 W), NOAA method, in Eastern local hours
